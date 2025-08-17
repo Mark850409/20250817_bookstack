@@ -1,0 +1,37 @@
+version: "3.7"
+
+services:
+  bookstack:
+    image: lscr.io/linuxserver/bookstack:latest
+    container_name: bookstack
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - APP_URL=http://localhost:6875
+      - DB_HOST=bookstack_db
+      - DB_PORT=3306
+      - DB_USER=bookstack
+      - DB_PASS=bookstack123
+      - DB_DATABASE=bookstackapp
+      - APP_KEY=base64:KCpOonWI5Toz1fgEsLjnaXktN6rBzGj62+fcq7BzUfk=   # 你產生的 APP_KEY
+    volumes:
+      - ./bookstack_data:/config
+    ports:
+      - 6875:80
+    restart: always
+    depends_on:
+      - bookstack_db
+
+  bookstack_db:
+    image: mariadb:10.6
+    container_name: bookstack_db
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MYSQL_ROOT_PASSWORD=rootpass
+      - MYSQL_DATABASE=bookstackapp
+      - MYSQL_USER=bookstack
+      - MYSQL_PASSWORD=bookstack123
+    volumes:
+      - ./bookstack_db:/config
+    restart: always
