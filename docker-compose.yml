@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   bookstack:
-    image: lscr.io/linuxserver/bookstack:latest
+    build: .
     container_name: bookstack
     environment:
       - PUID=1000
@@ -15,7 +15,9 @@ services:
       - DB_DATABASE=bookstackapp
       - APP_KEY=base64:KCpOonWI5Toz1fgEsLjnaXktN6rBzGj62+fcq7BzUfk=   # 你產生的 APP_KEY
     volumes:
-      - ./bookstack_data:/config
+      - ./bookstack_data:/config                      # 主設定 & app 資料
+      - ./uploads:/var/www/bookstack/public/uploads   # 檔案/圖片上傳
+      - ./scripts:/scripts                            # 匯入腳本或自訂工具
     ports:
       - 6875:80
     restart: always
