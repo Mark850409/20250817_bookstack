@@ -32,5 +32,3 @@ VOLUME ["/config", "/var/www/bookstack/public/uploads", "/scripts"]
 
 # 對外開放 Port 80
 EXPOSE 80
-
-CMD python3 /scripts/import_md_all.py
