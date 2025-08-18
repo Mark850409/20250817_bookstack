@@ -22,6 +22,8 @@ ENV PUID=1000 \
 # 建立資料目錄（在 Zeabur 可掛載 Volume）
 RUN mkdir -p /config /var/www/bookstack/public/uploads /scripts
 
+COPY scripts/ /scripts/
+
 # 指定工作目錄
 WORKDIR /var/www/bookstack
 
@@ -30,3 +32,5 @@ VOLUME ["/config", "/var/www/bookstack/public/uploads", "/scripts"]
 
 # 對外開放 Port 80
 EXPOSE 80
+
+CMD python3 /scripts/import_md_all.py
