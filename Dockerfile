@@ -4,6 +4,8 @@ FROM lscr.io/linuxserver/bookstack:latest
 # 安裝 Python & pip (Alpine 用 apk)
 RUN apk add --no-cache python3 py3-pip py3-requests py3-markdown
 
+RUN apk add --no-cache bash curl procps
+
 # 設定時區（可選）
 ENV TZ=Asia/Taipei
 
