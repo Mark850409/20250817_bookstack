@@ -32,14 +32,14 @@ tags:
 ## 1.3. 操作步驟
 ### 1.3.1. 至官網下載sonarqube7.7版本，並解壓
 
-![](https://markweb.idv.tw/uploads/upload_4bfc143561fc0993f4cf31316f742dcd.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Qzpc86c20d7-upload-4bfc143561fc0993f4cf31316f742dcd.png)
 
 <!--more-->
 
 ### 1.3.2. 編輯sonarqube7.7/conf/sonar.properties，建置以下 行，存檔
 
 
-![](https://markweb.idv.tw/uploads/upload_518c2e750d86585fff5200df31974fb7.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fOK9af05b98-upload-518c2e750d86585fff5200df31974fb7.png)
 
 ```java
 sonar.jdbc.username=sonar
@@ -55,9 +55,9 @@ sonar.jdbc.url=jdbc:mysql://localhost:3307/sonar?useUnicode=true&characterEncodi
 ### 1.3.4. 到sonarqube-7.7\bin\windows-x86-64找到StartSonar.bat，並點兩下執行
 
 
-![](https://markweb.idv.tw/uploads/upload_d86bab4446900fa13a3db33a45cc3e2f.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/lYMb08fd74b-upload-d86bab4446900fa13a3db33a45cc3e2f.png)
 
 ### 1.3.5. 如遇無法啟動可至sonarqube-7.7\logs\web.log查看
 
 
-![](https://markweb.idv.tw/uploads/upload_8261624ff0e2d9ccd1aa4be8908bf119.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/KY59db281f6-upload-8261624ff0e2d9ccd1aa4be8908bf119.png)

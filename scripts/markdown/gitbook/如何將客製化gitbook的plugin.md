@@ -183,7 +183,7 @@ module.exports = function(book, page) {
 
 1. 請先將專案推送到`gitlab`或是`github`
 
-![](https://markweb.idv.tw/uploads/202407141547355.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fff1dcc0-202407141547355.png)
 
 2. 登入並部署到NPM
 
@@ -195,7 +195,7 @@ module.exports = function(book, page) {
 npm login
 ```
 
-![](https://markweb.idv.tw/uploads/202407141542345.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ef49d759-202407141542345.png)
 
 
 ### 1.5.2 部署到NPM
@@ -203,9 +203,9 @@ npm login
 npm publish
 ```
 
-![](https://markweb.idv.tw/uploads/202407141544484.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/b594f3a7-202407141544484.png)
 
 
 ## 1.6 完成畫面
 
-![](https://markweb.idv.tw/uploads/202407141546043.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/kNC56aa7160-202407141546043.png)

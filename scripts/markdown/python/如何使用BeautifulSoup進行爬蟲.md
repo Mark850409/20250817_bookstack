@@ -34,7 +34,7 @@ tags:
 # 請在powershell或是IDE terminal執行喔
 pip install beautifulsoup4
 ```
-![](https://markweb.idv.tw/uploads/upload_6e4cd327a1d2d1804be51af65a7c120e.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/03bb3b06-upload-6e4cd327a1d2d1804be51af65a7c120e.png)
 
 <!--more-->
 
@@ -70,7 +70,7 @@ for page in range(1, 13):
         print(imgs)
 ```
 
-![](https://markweb.idv.tw/uploads/upload_4cb28da8761b3193670ff26275283423.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8f7321a4-upload-4cb28da8761b3193670ff26275283423.png)
 
 
 ### 1.3.4. FAQ
@@ -80,4 +80,4 @@ for page in range(1, 13):
 > https://israynotarray.com/other/20200510/1067127387/
 
 
-![](https://markweb.idv.tw/uploads/upload_9894fa2c19e49318d99156711de7f06e.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/YfBb779a668-upload-9894fa2c19e49318d99156711de7f06e.png)

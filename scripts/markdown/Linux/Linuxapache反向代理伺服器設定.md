@@ -35,7 +35,7 @@ cd /etc/apache2
 ll
 ```
 
-![](https://markweb.idv.tw/uploads/upload_755d59e5d5a2cb6b7a878515d710c937.jpg)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2ce93374-upload-755d59e5d5a2cb6b7a878515d710c937.jpg)
 
 <!--more-->
 
@@ -45,7 +45,7 @@ ll
 vim sites-available/000-default.conf
 ```
 
-![](https://markweb.idv.tw/uploads/upload_09f5c63822f241795cbb22b65950d81f.jpg)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/889c3df0-upload-09f5c63822f241795cbb22b65950d81f.jpg)
 
 ### 1.2.2 建立 組自定義ports，假設是9098，重定向至5088
 
@@ -58,7 +58,7 @@ vim sites-available/000-default.conf
 </VirtualHost>
 ```
 
-![](https://markweb.idv.tw/uploads/upload_5fcd660018ae74027c1abefa4c00217a.jpg)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/p1R3c75ea80-upload-5fcd660018ae74027c1abefa4c00217a.jpg)
 
 ### 1.2.3 建立一組5088ports
 
@@ -83,7 +83,7 @@ vim sites-available/000-default.conf
 </VirtualHost>
 ```
 
-![](https://markweb.idv.tw/uploads/upload_c7f179b8a7f3e6bc972e5e1905ba66af.jpg)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/k2R341dd757-upload-c7f179b8a7f3e6bc972e5e1905ba66af.jpg)
 
 ### 1.2.4 開啟Proxy模組
 
@@ -119,7 +119,7 @@ Listen 10108
 </IfModule>
 ```
 
-![](https://markweb.idv.tw/uploads/upload_32622768699555a2c3c4fbe92476b913.jpg)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/U5b8f1b9e43-upload-32622768699555a2c3c4fbe92476b913.jpg)
 
 ### 1.2.6 檢查5088 ports是否在監聽狀態
 
@@ -127,4 +127,4 @@ Listen 10108
 netstat -an|grep 5088
 ```
 
-![](https://markweb.idv.tw/uploads/upload_1deea9318e8241f3bfde75b1f7663d4d.jpg)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/R8Mf6fe3e05-upload-1deea9318e8241f3bfde75b1f7663d4d.jpg)

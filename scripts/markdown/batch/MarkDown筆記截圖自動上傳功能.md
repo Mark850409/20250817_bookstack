@@ -28,7 +28,7 @@ altitude: 0.0000
 
 ### 1.3.1 請先在Joplin進行以下設定
 
-![image-20230906213746159](https://markweb.idv.tw/uploads/image-20230906213746159.png)
+![image-20230906213746159](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/IKo3d24bb8b-image-20230906213746159.png)
 
 <!--more-->
 
@@ -56,7 +56,7 @@ echo Upload Success:
 echo https://markweb.idv.tw/uploads/%~nx1
 ```
 
-![image-20230906214031341](https://markweb.idv.tw/uploads/image-20230906214031341.png)
+![image-20230906214031341](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Zxj6ecdfed5-image-20230906214031341.png)
 
 ## 1.5 在Typora進行以下設定
 
@@ -66,7 +66,7 @@ echo https://markweb.idv.tw/uploads/%~nx1
 - 插入圖片轉義URL打勾
 - 圖片上傳命令使用自定義腳本
 
-![image-20230906214414536](https://markweb.idv.tw/uploads/image-20230906214414536.png)
+![image-20230906214414536](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Ir9bbabea5c-image-20230906214414536.png)
 
 ## 1.6 最後完成畫面
-![image-20230906214601539](https://markweb.idv.tw/uploads/image-20230906214601539.png)
+![image-20230906214601539](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/K08888b8629-image-20230906214601539.png)

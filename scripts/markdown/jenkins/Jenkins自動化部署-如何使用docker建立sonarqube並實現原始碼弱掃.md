@@ -119,9 +119,9 @@ networks:
 
 ```
 
-![](https://markweb.idv.tw/uploads/202407251500465.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/K3c8af8796a-202407251500465.png)
 
-![](https://markweb.idv.tw/uploads/202407251501199.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/FT3f8946df7-202407251501199.png)
 
 
 
@@ -133,7 +133,7 @@ networks:
 
 完成畫面如附圖
 
-![](https://markweb.idv.tw/uploads/202407251502347.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/08beba61-202407251502347.png)
 
 
 
@@ -144,7 +144,7 @@ networks:
 
 點擊配置>應用市場>搜尋chinese>即可找到中文外掛
 
-![](https://markweb.idv.tw/uploads/202407252057469.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Dmm10c2f6e1-202407252057469.png)
 
 
 可點擊以下這兩個連結查看支援的版本
@@ -152,19 +152,19 @@ networks:
 - 繁體中文外掛：https://github.com/timlee/sonar-l10n-zh-tw
 
 
-![](https://markweb.idv.tw/uploads/202407252102907.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/25181abe-202407252102907.png)
 
 
-![](https://markweb.idv.tw/uploads/202407252104299.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/SeWee0f8955-202407252104299.png)
 
 點擊配置>系統訊息>檢查自己的sonarqube版本
-![](https://markweb.idv.tw/uploads/202407252106835.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/05de9d62-202407252106835.png)
 
 
 ### 1.3.3  查看要安裝`sonar-scanner`要掃描的程式語言代碼版本
 
 點擊配置>應用市場>搜尋python>點擊首頁查看支援版本
-![](https://markweb.idv.tw/uploads/202407252112202.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2a1722b4-202407252112202.png)
 
 或點擊以下連結
 https://github.com/green-code-initiative/ecoCode-python
@@ -183,30 +183,30 @@ https://github.com/green-code-initiative/ecoCode-python
 
 請開啟`SFTP`軟體，進入`/media/markhsu/Data/DockerProtainer/mysonarqube/sonarqube_extensions/plugins/`目錄，將剛才下載好的`jar檔`放入此目錄
 
-![](https://markweb.idv.tw/uploads/202407252121605.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6044aad3-202407252121605.png)
 
 
 ### 1.3.5 從介面重啟`sonarqube`
 
 點擊配置>系統>重啟服務器
 
-![](https://markweb.idv.tw/uploads/202407252124342.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7TA9a87e393-202407252124342.png)
 
 
 重啟完成後畫面如下
 
-![](https://markweb.idv.tw/uploads/202407252124355.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/63jfc4744f6-202407252124355.png)
 
 
 ### 1.3.6  建立sonarqube專案
 
 請按下圖紅框標示建立 個專案，並將最後 個步驟的程式碼複製起來
 
-![](https://markweb.idv.tw/uploads/202407251510284.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/huV9dc23ea4-202407251510284.png)
 
-![](https://markweb.idv.tw/uploads/202407251511306.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/XpWe074ce92-202407251511306.png)
 
-![](https://markweb.idv.tw/uploads/202407251513680.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/10c028ad-202407251513680.png)
 
 
 ### 1.3.7  撰寫Jenkinsfile
@@ -269,21 +269,21 @@ pipeline {
 
 ### 1.3.8  回到Jenkins，確認是否安裝sonarqube外掛
 
-![](https://markweb.idv.tw/uploads/202407252133205.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c4a6da04-202407252133205.png)
 
 
 ### 1.3.9 請先設定相對應的憑證
 
-![](https://markweb.idv.tw/uploads/202407252135644.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f90db7d9-202407252135644.png)
 
 ![](https://markweb.idv.tw/uploads/202407252135373.png)
 
 
 ### 1.3.10  進入jenkins的系統設定，設定server
 
-![](https://markweb.idv.tw/uploads/202407252133700.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ibqed307e19-202407252133700.png)
 
-![](https://markweb.idv.tw/uploads/202407252134325.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/76933384-202407252134325.png)
 
 
 ### 1.3.11 進入jenkins的tool，手動配置sonar-scanner路徑
@@ -297,24 +297,24 @@ https://github.com/SonarSource/sonar-scanner-cli/releases
 /var/jenkins_home/opt/SonarQube/sonar-scanner-4.4.0.2170-linux/bin/
 ```
 
-![](https://markweb.idv.tw/uploads/202407252136547.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/xxCad3c7dab-202407252136547.png)
 
 
-![](https://markweb.idv.tw/uploads/202407252136659.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c9F547de350-202407252136659.png)
 
 
 請確認有`sonar-scanner`這個執行檔，記得要指向`bin`目錄
 
-![](https://markweb.idv.tw/uploads/202407252146263.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/758929a1-202407252146263.png)
 
 
 
 ## 1.4 完成畫面
 
-![](https://markweb.idv.tw/uploads/202407252051829.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/qFde3810636-202407252051829.png)
 
-![](https://markweb.idv.tw/uploads/202407252051400.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/HiCce24bcf0-202407252051400.png)
 
-![](https://markweb.idv.tw/uploads/202407252155352.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/h6T537ba621-202407252155352.png)
 
-![](https://markweb.idv.tw/uploads/202407252154794.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/1037be92-202407252154794.png)

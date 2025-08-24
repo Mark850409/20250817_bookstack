@@ -48,10 +48,10 @@ https://github.com/Molunerfinn/picgo/releases
 ```
 
 進入插件設定 > 安裝sftp-uploader
-![](https://markweb.idv.tw/uploads/202404071957931.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/MJBc951085f-202404071957931.png)
 
 設定以下必填項目
-![](https://markweb.idv.tw/uploads/202404071958911.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/9FYba25a538-202404071958911.png)
 
 
 > [!note] 小提示
@@ -59,7 +59,7 @@ https://github.com/Molunerfinn/picgo/releases
 
 
 配置該json文件
-![](https://markweb.idv.tw/uploads/202404071958898.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7IQ4468ea9d-202404071958898.png)
 
 
 

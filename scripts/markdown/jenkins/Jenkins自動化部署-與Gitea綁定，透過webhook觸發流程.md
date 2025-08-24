@@ -46,10 +46,10 @@ tags:
 ## 1.3 事前準備
 
 ### 1.3.1 請到gitea server建立 個新的倉庫
-![](https://markweb.idv.tw/uploads/upload_b31e77bdb2a2bfe541884812d00af1f7.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/n80f4545063-upload-b31e77bdb2a2bfe541884812d00af1f7.png)
 
 ### 1.3.2 點選設定→Webhook確認是否有和Jenkins綁定成功
-![](https://markweb.idv.tw/uploads/upload_5bb6653a5f7ef2dcb6f52aecdf5bbedd.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8W867c505d9-upload-5bb6653a5f7ef2dcb6f52aecdf5bbedd.png)
 
 <!--more-->
 
@@ -57,11 +57,11 @@ tags:
 
 ### 1.4.1 登入Jenkins，點選新增作業
 
-![](https://markweb.idv.tw/uploads/upload_8ae9fb12cf730d58d6792b55cac5678a.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/LMCf7b8e279-upload-8ae9fb12cf730d58d6792b55cac5678a.png)
 
 ### 1.4.2 在原始碼管理，點選Git，輸入URL並選取憑證
 
-![](https://markweb.idv.tw/uploads/upload_48674dafc93e503d4242912391f52a87.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7f02bfd5-upload-48674dafc93e503d4242912391f52a87.png)
 
 ### 1.4.3 建置觸發程序，請將GitHub hook trigger for GITScm polling&輪詢 SCM打勾，排程設定為每分鐘執行 次
 
@@ -69,39 +69,39 @@ tags:
 */1 * * * * 
 ```
 
-![](https://markweb.idv.tw/uploads/upload_47502e5cdce66cf643599abd435d2bbd.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Wd4a67d9ee9-upload-47502e5cdce66cf643599abd435d2bbd.png)
 
 
 ### 1.4.4 建置環境，勾選在「畫面輸出」中加入時間戳記，最後點選儲存即可
-![](https://markweb.idv.tw/uploads/upload_1a2b12b5c513a18b3ad7b9c30d817bd8.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/prO2dd20d94-upload-1a2b12b5c513a18b3ad7b9c30d817bd8.png)
 
 
 ## 1.5 實際測試(使用SourceTree)
 
 ### 1.5.1 點選clone，請輸入URL，最後點選克隆
-![](https://markweb.idv.tw/uploads/upload_495cf36ff949999bbb5de4a22c529ed1.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/BJU10d29a4e-upload-495cf36ff949999bbb5de4a22c529ed1.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_0a11ab1ddd49c3bbfad12187ff63bd62.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4b28b3b0-upload-0a11ab1ddd49c3bbfad12187ff63bd62.png)
 
 
 ### 1.5.2 看到此畫面表示已成功同步
-![](https://markweb.idv.tw/uploads/upload_309dc359f930b437d29193068862dc3b.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/72b62b2d-upload-309dc359f930b437d29193068862dc3b.png)
 
 
 ### 1.5.3 準備檔案進行提交...
 
-![](https://markweb.idv.tw/uploads/upload_55a2c99d89312c31b01540b9c6134a8c.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/9d4012ae-upload-55a2c99d89312c31b01540b9c6134a8c.png)
 
 
 ### 1.5.4 將檔案加入stage
 
-![](https://markweb.idv.tw/uploads/upload_845816c1ffc2ae3899ba95afffbd8dc0.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/pG53bfd5c06-upload-845816c1ffc2ae3899ba95afffbd8dc0.png)
 
 
 ### 1.5.5 準備commit
 
-![](https://markweb.idv.tw/uploads/upload_917a8a939d137f47b3a61f5428264b3c.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/gsE1a617d7b-upload-917a8a939d137f47b3a61f5428264b3c.png)
 
 
 ### 1.5.6 準備push
@@ -110,12 +110,12 @@ tags:
 
 
 ### 1.5.7 流程已佈署成功
-![](https://markweb.idv.tw/uploads/upload_544368f63418c0aafde855c5559aeb43.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/lC2ebd65308-upload-544368f63418c0aafde855c5559aeb43.png)
 
 
 ### 1.5.8 檢查Gitea是否已顯示剛才推送上去的專案
 
-![](https://markweb.idv.tw/uploads/upload_855815601af0ac0645b4d889ec579601.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ec7778ea-upload-855815601af0ac0645b4d889ec579601.png)
 
 ### 1.5.9 參考連結
 

@@ -37,10 +37,10 @@ LINEBOT串接OpenAI，讓LINE擁有ChatGPT一般的功能
 
 ### 1.3.1. 完成畫面
 
-![image-20240101172925968](https://markweb.idv.tw/uploads/image-20240101172925968.png)
+![image-20240101172925968](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/1bZ372bf366-image-20240101172925968.png)
 
 
-![image-20240101172955045](https://markweb.idv.tw/uploads/image-20240101172955045.png)
+![image-20240101172955045](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Qsf9ca6ccbb-image-20240101172955045.png)
 
 
 

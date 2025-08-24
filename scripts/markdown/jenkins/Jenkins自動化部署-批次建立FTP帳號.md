@@ -60,12 +60,12 @@ tags:
 
 請到`gitea`建立 個新的倉庫
 
-![image-20231005151331914](https://markweb.idv.tw/uploads/image-20231005151331914.png)
+![image-20231005151331914](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2JBf24cd078-image-20231005151331914.png)
 
 
 點選設定→`Webhook`確認是否有和`Jenkins`綁定成功
 
-![image-20231005151426424](https://markweb.idv.tw/uploads/image-20231005151426424.png)
+![image-20231005151426424](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2f04f268-image-20231005151426424.png)
 
 ### 1.5.2. 開始撰寫腳本
 
@@ -201,11 +201,11 @@ UPLOAD_FOLDER=uploads
 
 登入`Jenkins`，點選新增作業
 
-![](https://markweb.idv.tw/uploads/upload_8ae9fb12cf730d58d6792b55cac5678a.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/LMCf7b8e279-upload-8ae9fb12cf730d58d6792b55cac5678a.png)
 
 在原始碼管理，點選`Git`，輸入URL並選取憑證
 
-![image-20231005153057942](https://markweb.idv.tw/uploads/image-20231005153057942.png)
+![image-20231005153057942](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/1287c2b8-image-20231005153057942.png)
 
 
 建置觸發程序，請將`GitHub hook trigger for GITScm polling`&`輪詢 SCM`打勾，排程設定為`每分鐘`執行 次
@@ -214,11 +214,11 @@ UPLOAD_FOLDER=uploads
 */1 * * * * 
 ```
 
-![image-20231005153131823](https://markweb.idv.tw/uploads/image-20231005153131823.png)
+![image-20231005153131823](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/aWU5820dae8-image-20231005153131823.png)
 
 建置環境，勾選在`「畫面輸出」`中加入時間戳記
 
-![image-20231005153204356](https://markweb.idv.tw/uploads/image-20231005153204356.png)
+![image-20231005153204356](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ve034cc6be7-image-20231005153204356.png)
 
 建置步驟，選擇`執行shell`，請輸入以下指令
 
@@ -227,18 +227,18 @@ chmod +X autoBuildSFTP.sh
 sh autoBuildSFTP.sh
 ```
 
-![image-20231005153247283](https://markweb.idv.tw/uploads/image-20231005153247283.png)
+![image-20231005153247283](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/sdD7a81176a-image-20231005153247283.png)
 
 建置後動作，選擇`附上建置紀錄`，如下圖
 
-![image-20231005153316696](https://markweb.idv.tw/uploads/image-20231005153316696.png)
+![image-20231005153316696](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/tVA5c7d7de3-image-20231005153316696.png)
 
 ### 1.5.4. 執行結果
 
-![image-20231005153746306](https://markweb.idv.tw/uploads/image-20231005153746306.png)
+![image-20231005153746306](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3exf426300d-image-20231005153746306.png)
 
-![image-20231005153925795](https://markweb.idv.tw/uploads/image-20231005153925795.png)
+![image-20231005153925795](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/779ddd55-image-20231005153925795.png)
 
-![image-20231005154005042](https://markweb.idv.tw/uploads/image-20231005154005042.png)
+![image-20231005154005042](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ceb5fe54-image-20231005154005042.png)
 
-![image-20231005154113849](https://markweb.idv.tw/uploads/image-20231005154113849.png)
+![image-20231005154113849](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/44079bc6-image-20231005154113849.png)

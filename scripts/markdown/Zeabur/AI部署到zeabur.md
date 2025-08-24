@@ -28,27 +28,27 @@ tags:
 
 https://zeabur.com/zh-TW
 
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091835364.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7OT413dc436-202501091835364.png)
 
 請點擊`建立專案`
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091836881.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/288cb340-202501091836881.png)
 
 
 > [!NOTE]
 > 免費用戶將於24小時以後，自動刪除該主機，若要正式上線，請付費
 
 這邊測試使用，可選擇`Free Trail`
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091837955.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6kz6c1bcd0f-202501091837955.png)
 
 這邊可選擇要部署的方式，若有版控需求，建議選擇`Github`
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091901872.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/33f8d480-202501091901872.png)
 
 這邊請查看是否會有網域，如果沒有要`手動新增`
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091902570.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Nrpbbc206b9-202501091902570.png)
 
 
 
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091907037.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/YDz20e09d25-202501091907037.png)
 
 <!--more-->
 ## 3.2. LineBotAPI架設
@@ -384,15 +384,15 @@ CHANNEL_ACCESS_TOKEN = <你的Line後台申請的CHANNEL_ACCESS_TOKEN>
 CHANNEL_SECRET = <你的Line後台申請的CHANNEL_SECRET>
 ```
 
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091920295.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/sSS02f75fc0-202501091920295.png)
 
 點擊`部署`
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091920300.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Mkiaf99facd-202501091920300.png)
 
 ## 3.3. LINE DEVELOPERS設定Webhook URL
 
 填入剛才架設好的API網址，路由必須要指向`callback`
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091924751.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7e0fddf4-202501091924751.png)
 
 點擊`verify`，出現`Success`代表串接成功
-![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091925814.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3044fdf5-202501091925814.png)

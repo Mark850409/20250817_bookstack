@@ -62,4 +62,4 @@ nohup java -jar -Dfile.encoding=UTF-8 /home/svnWebUI/svnWebUI.jar --server.port=
 > 注意命令最后加 个&号, 表示项目后台运行
 ### 1.2.4 成功畫面
 
-![](https://markweb.idv.tw/uploads/upload_0b00e9f7ecbfb630f5e4b01b360304d4.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Ouv1b3ac377-upload-0b00e9f7ecbfb630f5e4b01b360304d4.png)

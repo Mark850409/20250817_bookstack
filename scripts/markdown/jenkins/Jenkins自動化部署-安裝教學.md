@@ -72,7 +72,7 @@ RUN pip3 install --upgrade pip && pip3 install art && pip3 install pytest && pip
 docker build -t myjenkins:1.9 .
 ```
 
-![](https://markweb.idv.tw/uploads/upload_5aa6dc22cd7a7d0af63befd575e0c9c8.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Fia605e240b-upload-5aa6dc22cd7a7d0af63befd575e0c9c8.png)
 
 
 ### 1.3.3 開始撰寫docker-compose.yml
@@ -116,29 +116,29 @@ networks:
 
 ### 1.4.1 首次佈署後，開啟web server，會到如下圖畫面，請依照指示查找密碼，並將密碼貼上到空格內，並點選解鎖
 
-![](https://markweb.idv.tw/uploads/upload_4387a13069c099dcb80b94f8fe358bcd.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fcc72e14-upload-4387a13069c099dcb80b94f8fe358bcd.png)
 
 ### 1.4.2 進入容器，輸入以下指令
 ```console=
 cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-![](https://markweb.idv.tw/uploads/upload_76a80c065a3d6604a63c89a3d48ba7a6.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/psj16bce4eb-upload-76a80c065a3d6604a63c89a3d48ba7a6.png)
 
 ### 1.4.3 點選安裝推薦的外掛，並等待安裝完成
-![](https://markweb.idv.tw/uploads/upload_bba7bcfcd1078bbd3f67a1264982747a.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/E7Q43929eef-upload-bba7bcfcd1078bbd3f67a1264982747a.png)
 
-![](https://markweb.idv.tw/uploads/upload_b7201dbb2d9a1952343f38f6af659f6a.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/vpae86a9965-upload-b7201dbb2d9a1952343f38f6af659f6a.png)
 
 
 ### 1.4.4 建立管理者帳號，往後就使用此帳號登入
 
-![](https://markweb.idv.tw/uploads/upload_1370aefec0db3d17197d05313250294e.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f0c4485c-upload-1370aefec0db3d17197d05313250294e.png)
 
 
 ### 1.4.5 ：使用預設即可，點選儲存並完成
-![](https://markweb.idv.tw/uploads/upload_0d300151fbb7d5d8881fd36fe96d8101.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/qX6e164cb22-upload-0d300151fbb7d5d8881fd36fe96d8101.png)
 
 
 ### 1.4.6 到此步驟表示已安裝成功
-![](https://markweb.idv.tw/uploads/upload_8f0ed2016d759bcf9e31b68908bd9ee9.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/56aa55ae-upload-8f0ed2016d759bcf9e31b68908bd9ee9.png)

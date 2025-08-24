@@ -41,7 +41,7 @@ tags:
 * 網站設定檔與金鑰檔
 * DockerFile 定要和所有檔案放同 層目錄
 
-![](https://markweb.idv.tw/uploads/upload_aeb0b3420000db4352661d63186d81cf.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/cb329777-upload-aeb0b3420000db4352661d63186d81cf.png)
 
 <!--more-->
 
@@ -81,13 +81,13 @@ ENV LANG C.UTF-8
 ```bash
 cd /media/markhsu/Data3/DockerImage/python/
 ```
-![](https://markweb.idv.tw/uploads/upload_a1aba57dff025a8e540a2f90e83402c4.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/yZO6408c179-upload-a1aba57dff025a8e540a2f90e83402c4.png)
 
 #### 1.3.3.2. 開始部屬，執行以下命令
 ```docker
 docker build -t mypython:1.0 -f Dockerfile_NEW .
 ```
-![](https://markweb.idv.tw/uploads/upload_e491c422a55511b1ab27cefab96b3b64.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ijpe0a89c6f-upload-e491c422a55511b1ab27cefab96b3b64.png)
 
 
 > [!note] 小提示
@@ -151,20 +151,20 @@ networks:
 ```
 
 #### 1.3.3.5. 部屬成功!!!
-![](https://markweb.idv.tw/uploads/upload_b97f6f0e586573331468fa259ff63703.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3e070fe5-upload-b97f6f0e586573331468fa259ff63703.png)
 
 #### 1.3.3.6. 切換至apache目錄，打開設定檔
 ```bash
  cd /media/markhsu/Data3/DockerProtainer/python/etc/apache2
  vim apache2.conf
 ```
-![](https://markweb.idv.tw/uploads/upload_d39a5bf7d783a2448c6ad48e8874d943.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/uTZ1bdbacfc-upload-d39a5bf7d783a2448c6ad48e8874d943.png)
 
 #### 1.3.3.7. 加入此行，設定python網站預設執行根目錄
 ```bash
 ScriptAlias /cgi-bin/ /var/www/html/
 ```
-![](https://markweb.idv.tw/uploads/upload_d678909a15d50b4f74f67cc04b4f034d.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/F4yfc6a54e1-upload-d678909a15d50b4f74f67cc04b4f034d.png)
 
 #### 1.3.3.8. 加入此行，設定python網站預設執行根目錄
 
@@ -172,12 +172,12 @@ ScriptAlias /cgi-bin/ /var/www/html/
 vim /etc/apache2/conf-enabled/serve-cgi-bin.conf
 ```
 
-![](https://markweb.idv.tw/uploads/upload_d40ad34cc9068c3c4e23068a736852e4.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/O3ka6ee0b1f-upload-d40ad34cc9068c3c4e23068a736852e4.png)
 
 
 #### 1.3.3.9. 輸入網址，即可看到Helloworld的畫面
 
-![](https://markweb.idv.tw/uploads/upload_a25fe363d1e2734d7d25e83ccf426b54.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ErN6167ea61-upload-a25fe363d1e2734d7d25e83ccf426b54.png)
 
 ### 1.3.4. 同場佳映
 
@@ -187,4 +187,4 @@ vim /etc/apache2/conf-enabled/serve-cgi-bin.conf
 > 請參考步驟8的圖片有說明...
 
 
-![](https://markweb.idv.tw/uploads/upload_f05fadf2513f553adbff653bc28976f1.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8d44155e-upload-f05fadf2513f553adbff653bc28976f1.png)

@@ -15,24 +15,24 @@ tags:
 ## 1.1. 簡介
 
 ## 1.2. 目錄
-- [LangChain+LangFlow+LineBot串接並部署到AZURE](#langchainlangflowlinebot串接並部署到azure)
-  - [簡介](#簡介)
-  - [目錄](#目錄)
-  - [操作步驟](#操作步驟)
-    - [STEP1：建立並修改env檔](#step1建立並修改env檔)
-    - [STEP2：撰寫`function_app.py`](#step2撰寫function_apppy)
-    - [STEP3：撰寫`requirements.txt`](#step3撰寫requirementstxt)
-    - [STEP4：請先在地端點擊F5進行測試，測試無誤後再部署到AzureFunction](#step4請先在地端點擊f5進行測試測試無誤後再部署到azurefunction)
-    - [STEP5：進入Azure Portal，點擊建立資源\>容器\>Container Registry](#step5進入azure-portal點擊建立資源容器container-registry)
-    - [STEP6：完成後，進入剛才建立的容器登錄\>設定\>存取金鑰](#step6完成後進入剛才建立的容器登錄設定存取金鑰)
-    - [STEP7：開啟cmd，輸入以下指令](#step7開啟cmd輸入以下指令)
-    - [STEP8：確認是否有出現這畫面，表示登入成功](#step8確認是否有出現這畫面表示登入成功)
-    - [STEP9：打包lanflow的DockerImage](#step9打包lanflow的dockerimage)
-    - [STEP10：這樣就代表打包好了](#step10這樣就代表打包好了)
-    - [STEP11：執行標記並推送映像檔](#step11執行標記並推送映像檔)
-    - [STEP12：確認是否推送成功](#step12確認是否推送成功)
-    - [STEP13：建立Azure Storage](#step13建立azure-storage)
-    - [STEP14：執行以下指令建立容器執行個體](#step14執行以下指令建立容器執行個體)
+- [1. LangChain+LangFlow+LineBot串接並部署到AZURE](#1-langchainlangflowlinebot串接並部署到azure)
+  - [1.1. 簡介](#11-簡介)
+  - [1.2. 目錄](#12-目錄)
+  - [1.3. 操作步驟](#13-操作步驟)
+    - [1.3.1. STEP1：建立並修改env檔](#131-step1建立並修改env檔)
+    - [1.3.2. STEP2：撰寫`function_app.py`](#132-step2撰寫function_apppy)
+    - [1.3.3. STEP3：撰寫`requirements.txt`](#133-step3撰寫requirementstxt)
+    - [1.3.4. STEP4：請先在地端點擊F5進行測試，測試無誤後再部署到AzureFunction](#134-step4請先在地端點擊f5進行測試測試無誤後再部署到azurefunction)
+    - [1.3.5. STEP5：進入Azure Portal，點擊建立資源\>容器\>Container Registry](#135-step5進入azure-portal點擊建立資源容器container-registry)
+    - [1.3.6. STEP6：完成後，進入剛才建立的容器登錄\>設定\>存取金鑰](#136-step6完成後進入剛才建立的容器登錄設定存取金鑰)
+    - [1.3.7. STEP7：開啟cmd，輸入以下指令](#137-step7開啟cmd輸入以下指令)
+    - [1.3.8. STEP8：確認是否有出現這畫面，表示登入成功](#138-step8確認是否有出現這畫面表示登入成功)
+    - [1.3.9. STEP9：打包lanflow的DockerImage](#139-step9打包lanflow的dockerimage)
+    - [1.3.10. STEP10：這樣就代表打包好了](#1310-step10這樣就代表打包好了)
+    - [1.3.11. STEP11：執行標記並推送映像檔](#1311-step11執行標記並推送映像檔)
+    - [1.3.12. STEP12：確認是否推送成功](#1312-step12確認是否推送成功)
+    - [1.3.13. STEP13：建立Azure Storage](#1313-step13建立azure-storage)
+    - [1.3.14. STEP14：執行以下指令建立容器執行個體](#1314-step14執行以下指令建立容器執行個體)
     - [STEP15：執行腳本掛載AZURE儲存庫到Windows地端](#step15執行腳本掛載azure儲存庫到windows地端)
 
 
@@ -386,18 +386,18 @@ Flask
 
 建立自己的容器存放庫
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c2e597c7-image.png)
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-1.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/05h5eb91ae7-image-1.png)
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-2.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VODba903757-image-2.png)
 
 
 ### 1.3.6. STEP6：完成後，進入剛才建立的容器登錄>設定>存取金鑰
 
 請先將紅框部分先記下來，等等會使用到
 
-![](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-3.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/image-3.png)
 
 
 ### 1.3.7. STEP7：開啟cmd，輸入以下指令
@@ -406,11 +406,11 @@ Flask
 docker login langflowbot.azurecr.io -u LangFlowBot
 ```
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-5.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6BK0c2ba24b-image-5.png)
 
 ### 1.3.8. STEP8：確認是否有出現這畫面，表示登入成功
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-6.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Em4f905fb79-image-6.png)
 
 
 ### 1.3.9. STEP9：打包lanflow的DockerImage
@@ -422,7 +422,7 @@ docker build -t langflow:1.0 .
 ### 1.3.10. STEP10：這樣就代表打包好了
 
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-4.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/image-4.png)
 
 ### 1.3.11. STEP11：執行標記並推送映像檔
 
@@ -434,18 +434,18 @@ docker push langflowbot.azurecr.io/langflow:1.0
 
 ### 1.3.12. STEP12：確認是否推送成功
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-7.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/891d5838-image-7.png)
 
 
 ### 1.3.13. STEP13：建立Azure Storage
 
 按照以下資訊填入
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-8.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Cl5e8d99348-image-8.png)
 
 無須更動設定，直接點選建立
 
-![alt text](https://raw.githubusercontent.com/Mark850409/20241227_LangFlowWithAzureBot/refs/heads/master/images/image-9.png)
+![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7797384d47b-image-9.png)
 
 ### 1.3.14. STEP14：執行以下指令建立容器執行個體
 

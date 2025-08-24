@@ -81,9 +81,9 @@ API_KEY=<在 Dify 上面設定 >
 >單一租使用者和多租使用者的MicrosoftAppType不一樣喔!!!
  
 
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220122016.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f7c54f9b-20241220122016.png)
 
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220122003.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ad5a188a-20241220122003.png)
 
 ### 4.4. 主程式說明
 
@@ -271,7 +271,7 @@ module.exports.EchoBot = EchoBot;
 docker compose up
 ```
 
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220122240.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/rRu25a4e115-20241220122240.png)
 
 
  >[!NOTE] 小提示
@@ -281,7 +281,7 @@ docker compose up
 ### 4.6. ngrok內網穿透(短暫測試)
 
 將紅框處網址複製起來，等等建立AzureBot會使用
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220122727.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ce5f6f94-20241220122727.png)
 
 ### 4.7. 部署到AzureFunction
 
@@ -294,29 +294,29 @@ https://github.com/Mark850409/20231217_AzureFunctionAPI
 
 https://portal.azure.com/#view/Microsoft_Azure_Marketplace/GalleryItemDetailsBladeNopdl/id/Microsoft.AzureBot/selectionMode~/false/resourceGroupId//resourceGroupLocation//dontDiscardJourney~/false/selectedMenuId/home/launchingContext~/%7B%22galleryItemId%22%3A%22Microsoft.AzureBot%22%2C%22source%22%3A%5B%22GalleryFeaturedMenuItemPart%22%2C%22VirtualizedTileDetails%22%5D%2C%22menuItemId%22%3A%22home%22%2C%22subMenuItemId%22%3A%22Search%20results%22%2C%22telemetryId%22%3A%22a09b3b54-129b-475f-bd39-d7285a272043%22%7D/searchTelemetryId/258b225f-e7d5-4744-bfe4-69fa701d9d5a
 
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220123524.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/bi77da4ce69-20241220123524.png)
 
 填寫紅框處必填資訊
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220123623.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/e3d52898-20241220123623.png)
 
 定價請選擇`Free`
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220123656.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/rX04eb28ebd-20241220123656.png)
 
 點擊檢閱+建立
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220123715.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ZDv4a00ce20-20241220123715.png)
 
 ### 4.9. 配置Azure Bot Service
 
 請將剛才複製的網址貼入`訊息端點`，後面記得加上`/api/messages`
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220122425.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/27e6bafa-20241220122425.png)
 
 上圖的APP ID旁邊有個`管理密碼`，請點擊進入如下圖的畫面，建立一個用戶端密碼，並先記起來
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220122459.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/1b2d6b25-20241220122459.png)
 
 
 進入頻道，找到可用通道，這邊可以自己選擇想要部署的地方，請自行參照設定設置即可
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220123254.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/20241220123254.png)
 
 ### 4.10. Telegram測試畫面
 
-![](https://raw.githubusercontent.com/Mark850409/20241220_difyAzureBot/refs/heads/master/images/20241220123919.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/20241220123919.png)

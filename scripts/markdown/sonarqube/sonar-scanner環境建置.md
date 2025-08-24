@@ -86,14 +86,14 @@ cd /d E:\Developer\PHP_WS\20211218-MarkWebTest
 sonar-scanner
 ```
 
-![](https://markweb.idv.tw/uploads/upload_7b2f480a86a8906fc9deb800bfd76d00.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8e065ece-upload-7b2f480a86a8906fc9deb800bfd76d00.png)
 
-![](https://markweb.idv.tw/uploads/upload_63ab189efc2402572827fa8f5927dec4.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/HOY8be2d6cd-upload-63ab189efc2402572827fa8f5927dec4.png)
 
 
 ### 1.3.4. 打開[http://localhost:9000](http://localhost:9000/projects)
 
 看到此畫面代表成功
 
-![](https://markweb.idv.tw/uploads/upload_14b9059bb985972541955d27d39a0054.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5d7015f9-upload-14b9059bb985972541955d27d39a0054.png)
 

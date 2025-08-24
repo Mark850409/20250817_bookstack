@@ -118,15 +118,15 @@ deploy:
 
 在`Gitlab專案`下，點選`存取憑證`，並點選`新增令牌`
 
-![](https://markweb.idv.tw/uploads/upload_96ddba6e7ac2701666906019e30f63ee.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/b9071c9e-upload-96ddba6e7ac2701666906019e30f63ee.png)
 
 輸入令牌名稱，選取範圍`勾選API`，並點選`建立`
 
-![](https://markweb.idv.tw/uploads/upload_ff12152bb69f6e23e23aa66aeac36e7a.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/NXPbd6b8d5c-upload-ff12152bb69f6e23e23aa66aeac36e7a.png)
 
 請先複製起來放到`記事本`或`NOTEPAD++`，免得不見要再產生 次
 
-![](https://markweb.idv.tw/uploads/upload_27e43a60540dfc2bc58b5c3c37341159.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/WEQe5eb49fe-upload-27e43a60540dfc2bc58b5c3c37341159.png)
 
 <!--more-->
 ### 1.5.2 自動化部署到gitlab
@@ -137,11 +137,11 @@ deploy:
 
 看到此畫面表示`部署成功`
 
-![](https://markweb.idv.tw/uploads/upload_21532d3d9a418dc55dc6345246f8903c.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/50a87dd4-upload-21532d3d9a418dc55dc6345246f8903c.png)
 
 到專案下的`package`進行查看，發現有 個新的安裝包
 
-![](https://markweb.idv.tw/uploads/upload_f9ea0c5889a8aa9b1e92e5c5f74bf1c3.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fb94d4cb-upload-f9ea0c5889a8aa9b1e92e5c5f74bf1c3.png)
 
 
 ### 1.5.3 下載npm安裝包到本地安裝
@@ -152,4 +152,4 @@ npm i @GitbookNPMProject/<你的package名稱>
 ```
 完成畫面如下
 
-![](https://markweb.idv.tw/uploads/upload_377080c3f1176cb419ea19923ef9fba5.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f2706041-upload-377080c3f1176cb419ea19923ef9fba5.png)

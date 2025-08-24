@@ -37,13 +37,13 @@ python dcard_articles_spider.py
 ```
 
 
-![](https://markweb.idv.tw/uploads/202411121833001.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VNTfb96dff8-202411121833001.png)
 
 
-![](https://markweb.idv.tw/uploads/202411121834347.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Nvobdea337a-202411121834347.png)
 
 
-![](https://markweb.idv.tw/uploads/202411121834573.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/kwt011dc7fb-202411121834573.png)
 
 主程式執行完畢會取得`dcard_articles.csv`，其中`article_link`是我們爬取文章留言需要的欄位
 
@@ -53,4 +53,4 @@ python dcard_articles_spider.py
 python dcard_comments_spider.py
 ```
 
-![](https://markweb.idv.tw/uploads/202411121834541.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/xS5004e770f-202411121834541.png)

@@ -94,7 +94,7 @@ print("歡迎回來, Mark,您今天的幸運主題是...："..randomTheme)
 load(io.popen('oh-my-posh init cmd --config E:\\Project\\CMD\\oh-my-posh\\oh-my-posh-main\\themes\\' .. randomTheme):read("*a"))()
 ```
 
-![](https://markweb.idv.tw/uploads/202404091929270.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/OBu4a6e4cdf-202404091929270.png)
 
 <!--more-->
 ### 1.2.2. Windows POWERSHELL
@@ -103,14 +103,14 @@ load(io.popen('oh-my-posh init cmd --config E:\\Project\\CMD\\oh-my-posh\\oh-my-
 
 #### 1.2.2.2. 進入windows市集，輸入`oh-my-posh`進行安裝[^1]
 
-![](https://markweb.idv.tw/uploads/202404091933392.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7jhc64b917d-202404091933392.png)
 
 #### 1.2.2.3. 輸入以下指令，開啟notepad++
 ```
 notepad $PROFILE
 ```
 
-![](https://markweb.idv.tw/uploads/202404091935320.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/JbW8045311f-202404091935320.png)
 
 
 > [!NOTE] 筆記
@@ -195,7 +195,7 @@ Write-Host "歡迎回來, ${DefaultUser}: 今天的幸運主題是: $selectedThe
 
 在設定檔增添更多樣式配置[^2]
 
-![](https://markweb.idv.tw/uploads/202404102118846.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8255a110-202404102118846.png)
 
 
 
@@ -787,17 +787,17 @@ echo "哈囉! 今天的幸運主題是 is: $posh_theme :)"
 eval "$(oh-my-posh init bash --config "$full_posh_theme")"
 ```
 
-![](https://markweb.idv.tw/uploads/202404072025741.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8f9b8355-202404072025741.png)
 
 輸入指令 `source ~/.bashrc`，讓設定生效
 
 ## 1.3. 成功畫面
 
-![](https://markweb.idv.tw/uploads/202404102123718.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/o3o175fd4b0-202404102123718.png)
 
-![](https://markweb.idv.tw/uploads/202404102123304.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VLT3166da0a-202404102123304.png)
 
-![](https://markweb.idv.tw/uploads/202404102123788.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Vyc60804d13-202404102123788.png)
 
 
 ## 1.4. 參考連結

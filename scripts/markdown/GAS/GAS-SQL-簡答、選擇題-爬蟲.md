@@ -146,18 +146,18 @@ function writeToSheetData(param, mySheet) {
 
 ### 1.3.3 測試結果
 
-![](https://markweb.idv.tw/uploads/upload_2c888e837529bad4e6c49013dcebb390.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/suuec999c7d-upload-2c888e837529bad4e6c49013dcebb390.png)
 
-![](https://markweb.idv.tw/uploads/upload_72abf9b8b8ba74b62d5706eeb7727bfb.png)
-
-
-![](https://markweb.idv.tw/uploads/upload_ddb14206ffd646a2997e5a490ccb452e.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/adef0331-upload-72abf9b8b8ba74b62d5706eeb7727bfb.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_dfcb927b5bf7e4704d105772a2a3ddb2.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2bf509ee-upload-ddb14206ffd646a2997e5a490ccb452e.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_1eb37209e4823074372f92e73b71c24b.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6kb58ca1a3d-upload-dfcb927b5bf7e4704d105772a2a3ddb2.png)
+
+
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Wz002a5dc18-upload-1eb37209e4823074372f92e73b71c24b.png)
 
 ## 1.4 GAS-SQL選擇程式撰寫
 
@@ -293,6 +293,6 @@ function writeToSheetData2(param, mySheet) {
 
 ### 1.4.3 測試結果
 
-![](https://markweb.idv.tw/uploads/upload_d0cff08aff91be9df552977fe1513221.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/07d8353f-upload-d0cff08aff91be9df552977fe1513221.png)
 
 ![](https://markweb.idv.tw/uploads/upload_bba6ee405cadfe1704b4e036c70ab096.png)

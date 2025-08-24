@@ -37,7 +37,7 @@ tags:
 * jupyter_notebook_config.py jupyter設定檔
 * DockerFile 定要和所有檔案放同 層目錄
 
-![](https://markweb.idv.tw/uploads/upload_f8b2cfaac0558649e274ba20b7ad2ce3.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/SSy97212e16-upload-f8b2cfaac0558649e274ba20b7ad2ce3.png)
 
 <!--more-->
 
@@ -55,7 +55,7 @@ COPY letsencrypt /etc
 
 #### 1.3.3.1. 請先切換到根目錄下
 
-![](https://markweb.idv.tw/uploads/upload_26fc2b893baef68e38d2270e79dc6abe.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/X2o9b840d0a-upload-26fc2b893baef68e38d2270e79dc6abe.png)
 
 #### 1.3.3.2. 開始部屬，執行以下命令
 ```docker
@@ -63,7 +63,7 @@ docker build --network=host -t myjupyter:1.0 .
 ```
 
 #### 1.3.3.3. 參考此文章，如何推送至docker registry hub
-![](https://markweb.idv.tw/uploads/upload_4a8ffb7156ea2ce9b725d33ea7bc2a93.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/15e4b563-upload-4a8ffb7156ea2ce9b725d33ea7bc2a93.png)
 
 
 #### 1.3.3.4. 撰寫docker-compose.yml
@@ -98,8 +98,8 @@ volumes:
 ```
 
 #### 1.3.3.5. 部屬成功!!!
-![](https://markweb.idv.tw/uploads/upload_5a972a26e9c9187707105d892a7cd236.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Bdj76db21a4-upload-5a972a26e9c9187707105d892a7cd236.png)
 
 
 #### 1.3.3.6. 查看是否能進入主畫面!!!
-![](https://markweb.idv.tw/uploads/upload_ed49ecda269e3fba3fd38feb30d4a9b3.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/TSKe822122a-upload-ed49ecda269e3fba3fd38feb30d4a9b3.png)

@@ -70,6 +70,9 @@ class ImageMigrator:
         # 為 session 設定 headers
         self.session.headers.update(self.headers)
         
+        # 快取已存在的圖片列表
+        self.existing_images = None
+        
     def test_api_connection(self):
         """測試 BookStack API 連線"""
         try:
@@ -108,6 +111,51 @@ class ImageMigrator:
         print("   - 權限: 確保包含 'Create/Update/Delete Images' 權限")
         print("4. 使用新創建的 Token 重新執行腳本")
         print("5. 如果問題持續，請檢查 BookStack 版本是否支援 Image Gallery API")
+        
+    def get_existing_images(self):
+        """取得 BookStack 圖片庫中已存在的圖片列表"""
+        if self.existing_images is not None:
+            return self.existing_images
+            
+        try:
+            gallery_url = f"{self.bookstack_url}/api/image-gallery"
+            
+            # 使用與 upload_to_bookstack 相同的直接 requests 方式
+            response = requests.get(
+                gallery_url,
+                headers={
+                    'Authorization': self.token_format,
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                },
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                self.existing_images = {}
+                
+                # 解析回應，建立檔名到 URL 的映射
+                if 'data' in data:
+                    for image in data['data']:
+                        if 'name' in image and 'url' in image:
+                            self.existing_images[image['name']] = image['url']
+                        elif 'name' in image and 'path' in image:
+                            self.existing_images[image['name']] = f"{self.bookstack_url}{image['path']}"
+                
+                print(f"已載入 {len(self.existing_images)} 個現有圖片")
+                return self.existing_images
+            else:
+                print(f"無法取得圖片庫列表: HTTP {response.status_code}")
+                if response.status_code == 403:
+                    print(f"權限錯誤，請檢查 API Token 權限")
+                    print(f"回應內容: {response.text}")
+                self.existing_images = {}
+                return self.existing_images
+                
+        except Exception as e:
+            print(f"取得圖片庫列表時發生錯誤: {e}")
+            self.existing_images = {}
+            return self.existing_images
         
     def find_external_images(self):
         """掃描所有 markdown 文件，找出外部圖片連結"""
@@ -162,6 +210,17 @@ class ImageMigrator:
             
             print(f"正在處理: {url}")
             
+            # 生成本地檔名
+            local_filename = self.generate_local_filename(url)
+            
+            # 檢查圖片是否已存在於 BookStack 圖片庫
+            existing_images = self.get_existing_images()
+            if local_filename in existing_images:
+                existing_url = existing_images[local_filename]
+                print(f"圖片已存在，跳過上傳: {local_filename} -> {existing_url}")
+                self.uploaded_images[url] = existing_url
+                return existing_url
+            
             # 下載圖片
             download_headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -190,14 +249,11 @@ class ImageMigrator:
                     print(f"下載失敗，正在重試 ({attempt + 1}/{max_retries}): {e}")
                     time.sleep(2)  # 等待 2 秒後重試
             
-            # 生成檔名
-            original_filename = self.generate_local_filename(url)
-            
-            # 上傳到 BookStack
-            bookstack_url = self.upload_to_bookstack(response.content, original_filename)
+            # 上傳到 BookStack (使用之前生成的檔名)
+            bookstack_url = self.upload_to_bookstack(response.content, local_filename)
             
             if bookstack_url:
-                print(f"已上傳: {original_filename} -> {bookstack_url}")
+                print(f"已上傳: {local_filename} -> {bookstack_url}")
                 self.uploaded_images[url] = bookstack_url
                 
                 # 避免過於頻繁的請求
@@ -332,6 +388,9 @@ class ImageMigrator:
         if not self.test_api_connection():
             print("錯誤：無法連接到 BookStack API，請檢查 URL 和 Token")
             return 0, 0, 0
+        
+        print("正在載入現有圖片庫...")
+        self.get_existing_images()
             
         print("開始掃描外部圖片...")
         external_images = self.find_external_images()

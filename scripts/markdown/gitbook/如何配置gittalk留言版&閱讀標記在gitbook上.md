@@ -78,19 +78,19 @@ Gitbook
 
 請登入自己的`gitlab`，找到setting
 
-![](https://markweb.idv.tw/uploads/202407172253097.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/812bf117-202407172253097.png)
 
 點擊`developer settings`
 
-![](https://markweb.idv.tw/uploads/202407172253385.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8560e647-202407172253385.png)
 
 點擊`OAuth Apps`，並點擊`New OAuth APP`新建 個
 
-![](https://markweb.idv.tw/uploads/202407172253683.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/667810ad-202407172253683.png)
 
 建立完成之後會有 個`Client ID`，請先記錄下來，等等會使用到，至於`clientSecret`，請點擊紅框處的按鈕，也請先記錄下來，因為只會出現 次
 
-![](https://markweb.idv.tw/uploads/202407172254525.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3efb87ba-202407172254525.png)
 
 請填寫以下相關參數，說明如下：
 
@@ -101,7 +101,7 @@ Gitbook
 
 完成後點選`Update application`按鈕
 
-![](https://markweb.idv.tw/uploads/202407172255976.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Z6j90f3ca66-202407172255976.png)
 
 <!--more-->
 ## 1.5 程式撰寫
@@ -184,4 +184,4 @@ Gitbook
 
 ## 1.6 完成畫面
 
-![](https://markweb.idv.tw/uploads/202407172319939.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5c1e1459-202407172319939.png)

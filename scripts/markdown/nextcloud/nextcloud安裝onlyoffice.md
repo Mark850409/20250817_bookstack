@@ -50,7 +50,7 @@ docker run -i -t -d -p <改成自己的ports>:80 --restart=always \
 <!--more-->
 
 ### 1.3.2. 請查看nextcloud apache設定檔路徑，並進入設定檔加入以下設定
-![](https://markweb.idv.tw/uploads/upload_4597608da5cd6b6f2410efb68a2d89c0.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Y52d740cf52-upload-4597608da5cd6b6f2410efb68a2d89c0.png)
 
 
 ```yaml
@@ -76,7 +76,7 @@ docker run -i -t -d -p <改成自己的ports>:80 --restart=always \
 ----
 ### 1.3.3. 打開瀏覽器，看到此畫面代表設定成功，輸入https://markweb.idv.tw:6443/
 
-![](https://markweb.idv.tw/uploads/upload_21eab1667b62ba276a6671d09419de0c.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5IY33e524aa-upload-21eab1667b62ba276a6671d09419de0c.png)
 
 ----
 
@@ -95,7 +95,7 @@ sudo docker exec 284180350e24 sudo supervisorctl start ds:example
 ```bash
 sudo docker exec 284180350e24 sudo sed 's,autostart=false,autostart=true,' -i /etc/supervisor/conf.d/ds-example.conf
 ```
-![](https://markweb.idv.tw/uploads/upload_42fce152bed8752ba273e434062ec417.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3761b6f6-upload-42fce152bed8752ba273e434062ec417.png)
 
 
 
@@ -109,45 +109,45 @@ sudo docker exec 284180350e24 sudo sed 's,autostart=false,autostart=true,' -i /e
 
 
 
-![](https://markweb.idv.tw/uploads/upload_776f9d6abf0076de94b3f7b08e616555.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/rAl9120a51e-upload-776f9d6abf0076de94b3f7b08e616555.png)
 
 * 檢查紅框處，/etc/onlyoffice/documentserver/local.json
-![](https://markweb.idv.tw/uploads/upload_d9d884ef20bedea11532b8ca5facc7a6.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/khF3d65d28c-upload-d9d884ef20bedea11532b8ca5facc7a6.png)
 
 
 ### 1.3.7. 看到以下圖片表示設定成功
-![](https://markweb.idv.tw/uploads/upload_0a27621e4b8f77b222e869c0b5208b08.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/26f313b5-upload-0a27621e4b8f77b222e869c0b5208b08.png)
 
 
 ### 1.3.8. 進入nextcloud查看，確認設定無誤
 
-![](https://markweb.idv.tw/uploads/upload_76737d0c407770b1d4d4399c853ad934.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/lbu725aee06-upload-76737d0c407770b1d4d4399c853ad934.png)
 
 ### 1.3.9. enjoy office
 
-![](https://markweb.idv.tw/uploads/upload_56ca783e8148112f74096de87ca1711d.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/314c810a-upload-56ca783e8148112f74096de87ca1711d.png)
 
 ![](https://markweb.idv.tw/uploads/upload_59a705288a190a55be008b300de4ef78.png)
 
-![](https://markweb.idv.tw/uploads/upload_bbda2833558920504c2c0ab8df75dc46.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/hOv0e4f9a9d-upload-bbda2833558920504c2c0ab8df75dc46.png)
 
-![](https://markweb.idv.tw/uploads/upload_f9d370742fdb422ddfc36bc72d8be230.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/b4f8eeed-upload-f9d370742fdb422ddfc36bc72d8be230.png)
 
-![](https://markweb.idv.tw/uploads/upload_2576b45c90df64ebccb5a8cfb8de8f43.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/HOA5f78720a-upload-2576b45c90df64ebccb5a8cfb8de8f43.png)
 
 
 ## 1.4. 同場加映，如何自動啟動onlyoffice
 
 ### 1.4.1. 進入onlyoffice容器查看容器ID
-![](https://markweb.idv.tw/uploads/upload_3c72f229b461a83fa7c2123a4c8f0d47.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/d075cf31-upload-3c72f229b461a83fa7c2123a4c8f0d47.png)
 
 ### 1.4.2. 確認要調整的內容，如下圖紅框處
-![](https://markweb.idv.tw/uploads/upload_00c320f05b187cd61738791425558127.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7b805ff9-upload-00c320f05b187cd61738791425558127.png)
 
 
 ### 1.4.3. 在本機目錄建立腳本
 
-![](https://markweb.idv.tw/uploads/upload_48c31e1989fb76aae983c3470148ce4a.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/b09a5a85-upload-48c31e1989fb76aae983c3470148ce4a.png)
 
 ### 1.4.4. 新增以下指令
 ```bash
@@ -157,11 +157,11 @@ docker exec 284180350e24 sudo sed -i '25c "header": "AuthorizeJwt",' /etc/onlyof
 docker exec 284180350e24 sudo sed -i '26c "inBody": false' /etc/onlyoffice/documentserver/local.json
 docker exec 284180350e24 sudo supervisorctl restart all
 ```
-![](https://markweb.idv.tw/uploads/upload_461093926729c7cde9da01c41ebb2eaa.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5Lj31f504d0-upload-461093926729c7cde9da01c41ebb2eaa.png)
 
 ### 1.4.5. 編輯vim /etc/crontab ，新增以下指令，並重啟CRONTAB服務
 
 ```bash
 @reboot root sh /home/markhsu/autostartoffice.sh
 ```
-![](https://markweb.idv.tw/uploads/upload_1b9cb4341548aaf9fce339a901b04e4b.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/e8c7c49f-upload-1b9cb4341548aaf9fce339a901b04e4b.png)

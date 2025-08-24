@@ -53,7 +53,7 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ### 1.4.1. 建立`Gitea`倉庫
 
-![](https://markweb.idv.tw/uploads/upload_061153df73075b68074b10aae76e3ea1.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/lmlec750aa7-upload-061153df73075b68074b10aae76e3ea1.png)
 
 <!--more-->
 ## 1.5. 執行步驟
@@ -413,22 +413,22 @@ if __name__ == "__main__":
 ### 1.5.3. 使用`Jenkins`設計腳本流程
 
 ### 1.5.4. 建立 個作業流程，開始定義要傳入腳本的`參數`
-![](https://markweb.idv.tw/uploads/upload_a8b72676b1e10db0dde676fe4ccf704d.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/95T0cef65cb-upload-a8b72676b1e10db0dde676fe4ccf704d.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_2c197a9a1d40f9bca3e1a681e6c8172e.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8df725c2-upload-2c197a9a1d40f9bca3e1a681e6c8172e.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_d254c40e68a7eccc380d1941b9146e74.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3a118ddc61f-upload-d254c40e68a7eccc380d1941b9146e74.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_a309690cb04e0839ca59c68d89e1acb9.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/a7c35e2c-upload-a309690cb04e0839ca59c68d89e1acb9.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_fb6c38d296b022948fc67886d1e89322.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8be6c4d0-upload-fb6c38d296b022948fc67886d1e89322.png)
 
 ### 1.5.5. 設定此`作業流程觸發`的時間，本案例為每日早上7:40觸發
-![](https://markweb.idv.tw/uploads/upload_8df079eb9ffa8c4f0807054fd7627b4d.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/668361ca-upload-8df079eb9ffa8c4f0807054fd7627b4d.png)
 
 
 ### 1.5.6. 撰寫`shell腳本`
@@ -492,15 +492,15 @@ git push origin ${GIT_BRANCH}
 ```
 
 ### 1.5.7. 設定建置後要觸發`email寄信`
-![](https://markweb.idv.tw/uploads/upload_ed3113b1dc3c68a05cca70c1ce2f51d5.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/a9919847-upload-ed3113b1dc3c68a05cca70c1ce2f51d5.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_2b0f01e5717c2fffd7a2fb1ae6ddaa19.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7d9c1de5-upload-2b0f01e5717c2fffd7a2fb1ae6ddaa19.png)
 
 
 ### 1.5.8. 請先`手動建置`執行，確認無誤後再使用`排程執行`
-![](https://markweb.idv.tw/uploads/upload_69f1e10c91e9f3063926943661229997.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/0tb00f21bad-upload-69f1e10c91e9f3063926943661229997.png)
 
 
 ### 1.5.9. 執行成功如附圖
-![](https://markweb.idv.tw/uploads/upload_e7ab87b8bcfb53c81f1d819a4e41c450.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/87vff07304e-upload-e7ab87b8bcfb53c81f1d819a4e41c450.png)

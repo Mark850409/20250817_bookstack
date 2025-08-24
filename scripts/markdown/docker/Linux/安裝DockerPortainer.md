@@ -55,7 +55,7 @@ docker run -d -p 9443:9443 -p 8000:8000 \
 docker ps
 ```
 
-![](https://markweb.idv.tw/uploads/upload_96a75584b411956cd6a18dece7683641.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/cEx7427749c-upload-96a75584b411956cd6a18dece7683641.png)
 
 * * *
 
@@ -67,4 +67,4 @@ docker ps
 
 - 恭喜您，已可開始使用!!!
 
-![](https://markweb.idv.tw/uploads/upload_7cb8c2de1b7c8a6690397d0e8267ed57.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/KPof02f430d-upload-7cb8c2de1b7c8a6690397d0e8267ed57.png)

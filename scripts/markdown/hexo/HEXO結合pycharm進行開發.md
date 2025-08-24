@@ -28,7 +28,7 @@ tags:
 
 ### 1.3.1 建立 個空的新專案，並設定SFTP同步
 
-![](https://markweb.idv.tw/uploads/upload_28c774de95e05d69b17aeebd005350eb.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6d99d761-upload-28c774de95e05d69b17aeebd005350eb.png)
 
 * * *
 <!--more-->
@@ -43,7 +43,7 @@ tags:
 
 
 
-![](https://markweb.idv.tw/uploads/upload_96626bb5ad5c46e2da1fcd1ef5056fc6.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/a0544635-upload-96626bb5ad5c46e2da1fcd1ef5056fc6.png)
 
 * * *
 
@@ -53,16 +53,16 @@ tags:
 記得要將Deployment path：設定為＂/＂
 
 
-![](https://markweb.idv.tw/uploads/upload_3a98b65c9bd0ffd0349188d47e23a775.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/WST1c904345-upload-3a98b65c9bd0ffd0349188d47e23a775.png)
 
 * * *
 
 ### 1.3.4 點選tools→Deployment→Options
 
-![](https://markweb.idv.tw/uploads/upload_2a14592ef92fc55948400c65ccfcd2d0.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/31112683-upload-2a14592ef92fc55948400c65ccfcd2d0.png)
 
 * * *
 
 ### 1.3.5 Upload changed files auto...這邊選擇Always即可
 
-![](https://markweb.idv.tw/uploads/upload_e5cbd837efc3a14ef8faf927d13b1724.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/AiK3036585b-upload-e5cbd837efc3a14ef8faf927d13b1724.png)

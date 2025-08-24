@@ -101,7 +101,7 @@ svnadmin create ~/svnrepo/myprj
 
 Step3：修改 ~/svnrepo/myprj/conf/passwd 來新增帳號
 
-![](https://markweb.idv.tw/uploads/upload_afbbecabb7bec4722784d3d94d2af6df.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/JkZ7b463ccb-upload-afbbecabb7bec4722784d3d94d2af6df.png)
 
 
 Step4：接著編輯 ~/svnrepo/myprj/conf/svnserve.conf 修改設定，找到 / 修改下列3個項目，前且移除前面的 "#"，使其生效

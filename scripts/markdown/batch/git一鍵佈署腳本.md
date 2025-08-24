@@ -135,9 +135,9 @@ fi
 
 ```
 ### 1.3.2. 執行結果(方法 )
-![](https://markweb.idv.tw/uploads/upload_a89c3a42ce377eb6e661ec7ce5a892c9.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/a9182130-upload-a89c3a42ce377eb6e661ec7ce5a892c9.png)
 
-![](https://markweb.idv.tw/uploads/upload_b907d1ee03c1bee59af32904e93f4a29.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/CWE5d9b6110-upload-b907d1ee03c1bee59af32904e93f4a29.png)
 
 ### 1.3.3. 開始撰寫下列語法(方法 )
 
@@ -178,6 +178,6 @@ ${GIT} remote add origin ${REPO_URL}
 ${GIT} push -u origin master
 ```
 ### 1.3.4. 執行結果(方法 )
-![](https://markweb.idv.tw/uploads/upload_a8b36d11a2d8efc3bc0fcf8d6cb39c24.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c3fc69b2-upload-a8b36d11a2d8efc3bc0fcf8d6cb39c24.png)
 
-![](https://markweb.idv.tw/uploads/upload_8b03dd90660aa61c6114b9558377cde9.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/GdI4d738658-upload-8b03dd90660aa61c6114b9558377cde9.png)

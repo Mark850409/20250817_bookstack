@@ -334,7 +334,7 @@ always-auth=true
 ```bash
 npm login
 ```
-![](https://markweb.idv.tw/uploads/upload_d1df11ca1d612ac5dfc144ccdbcdcbe5.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f9955c9d-upload-d1df11ca1d612ac5dfc144ccdbcdcbe5.png)
 
 6. 輸入以下指令，進行`npm打包推送`
 
@@ -342,10 +342,10 @@ npm login
 npm publish
 ```
 
-![](https://markweb.idv.tw/uploads/upload_55b942ad2085064c657780d359e34b69.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/879be26c-upload-55b942ad2085064c657780d359e34b69.png)
 
 
-![](https://markweb.idv.tw/uploads/upload_df8fc1ec4bb6ffdb0a31313903a68323.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/bf011f8d-upload-df8fc1ec4bb6ffdb0a31313903a68323.png)
 
 
 

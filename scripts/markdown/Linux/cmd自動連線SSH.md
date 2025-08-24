@@ -25,20 +25,20 @@ tags:
 
 ### 1.2.1 開啟windows命令提示字元
 
-![](https://markweb.idv.tw/uploads/upload_56c74670c50f687b6ee6d5329f1cad06.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ceb51164-upload-56c74670c50f687b6ee6d5329f1cad06.png)
 
 * * *
 <!--more-->
 
 ### 1.2.2 下拉選單選擇設定
 
-![](https://markweb.idv.tw/uploads/upload_8bc2cff44294ba3a8fe4ba18f87ade83.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/0gba33a23bb-upload-8bc2cff44294ba3a8fe4ba18f87ade83.png)
 
 * * *
 
 ### 1.2.3 開啟setting.json，在actions底下輸入指令
 
-![](https://markweb.idv.tw/uploads/upload_19351111c6808a491617ff0cc560d856.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3lo746ff5ff-upload-19351111c6808a491617ff0cc560d856.png)
 
 ```
 {
@@ -53,4 +53,4 @@ tags:
 
 ### 1.2.4 將setting.json存檔後，直接開啟測試，看到此畫面表示已完成
 
-![](https://markweb.idv.tw/uploads/upload_d6087f4ee9cbcbc3f3da075da04dee4a.png)
+![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/57b7c4bc-upload-d6087f4ee9cbcbc3f3da075da04dee4a.png)
