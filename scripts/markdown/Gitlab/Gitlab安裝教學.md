@@ -145,7 +145,7 @@ services:
 
 3. 進入DockerPortainer部署，並查看gitlab容器是否已執行
 
-![image-20240117213835210](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/W819db9b2ff-image-20240117213835210.png)
+![image-20240117213835210](https://markweb.idv.tw/uploads/image-20240117213835210.png)
 
 ---
 ### 1.2.2 架設GitRunner
@@ -153,11 +153,11 @@ services:
 
 1. 進入gitlab建立群組
 
-![image-20240117214753574](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/52f237ac-image-20240117214753574.png)
+![image-20240117214753574](https://markweb.idv.tw/uploads/image-20240117214753574.png)
 
 2. 在建置→runners，點擊 個點點，複製token，等等會用到
 
-![image-20240117214904273](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ea5c82b9-image-20240117214904273.png)
+![image-20240117214904273](https://markweb.idv.tw/uploads/image-20240117214904273.png)
 
 3. 執行以下指令
 
@@ -198,11 +198,11 @@ Configuration (with the authentication token) was saved in "/etc/gitlab-runner/c
 >* 這幾次測試時發現，gitlab 似乎會隨機挑選runner(每次執行都會是不同的)，因此這邊設定標籤要注意，不要將沒有註冊docker環境的執行器設定標籤，否則在自動化腳本會出錯
 > * 若要同時執行多個環境的docker而不需要等待目前已執行的執行器，可多建立幾個runner，且註冊好執行環境即可，可按照下圖方式配置
 
-![image-20240121152858713](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Atb80a90f66-image-20240121152858713.png)
+![image-20240121152858713](https://markweb.idv.tw/uploads/image-20240121152858713.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/bace565d-202407172350324.png)
+![](https://markweb.idv.tw/uploads/202407172350324.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3ec28d08-202407172351435.png)
+![](https://markweb.idv.tw/uploads/202407172351435.png)
 
 ### 1.2.3 SSH KEY 建立
 
@@ -214,7 +214,7 @@ Configuration (with the authentication token) was saved in "/etc/gitlab-runner/c
 ssh-keygen -t rsa -b 8192
 ```
 
-![image-20240117220235153](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/DFc45aa24f9-image-20240117220235153.png)
+![image-20240117220235153](https://markweb.idv.tw/uploads/image-20240117220235153.png)
 
 
 2. 在`config`檔案新增以下指令
@@ -236,15 +236,15 @@ Host gitlab
 
 3. 進入`Gitlab`，添加 組剛剛產生的公開金鑰`gitlab_rsa.pub`
 
-![image-20240117220507713](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/b825e6e6-image-20240117220507713.png)
+![image-20240117220507713](https://markweb.idv.tw/uploads/image-20240117220507713.png)
 
 4. 測試windows是否可以成功
 
-![image-20240117222325693](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7cea9bf5-image-20240117222325693.png)
+![image-20240117222325693](https://markweb.idv.tw/uploads/image-20240117222325693.png)
 
 ---
 #### 1.2.3.2 LINUX操作步驟差異在config寫法不同
-![image-20240117222455660](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/632a3438-image-20240117222455660.png)
+![image-20240117222455660](https://markweb.idv.tw/uploads/image-20240117222455660.png)
 
 
 
@@ -252,34 +252,34 @@ Host gitlab
 
 ### 1.3.1 HARBOR SSL連線失敗解決方案
 1. 找到`registry`的這支API，點選鎖頭
-![image-20240121150514153](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/HWYd7cc5891-image-20240121150514153.png)
+![image-20240121150514153](https://markweb.idv.tw/uploads/image-20240121150514153.png)
 
 2. 填上`Harbor`正確登入的`帳號`以及`密碼`
-![image-20240121150606390](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/9SU39d5bfa8-image-20240121150606390.png)
+![image-20240121150606390](https://markweb.idv.tw/uploads/image-20240121150606390.png)
 
 3. 開啟cmd，連線到遠端，輸入以下指令進行測試，出現`SSL憑證錯誤`的訊息
 
 ```bash
 curl -X GET -H "Authorization: Bearer bWFya2hzdTpNYXJrODUwNDA5" https://markweb.idv.tw:29443/api/v2.0/registries
 ```
-![image-20240121150707083](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/GFDaca9d533-image-20240121150707083.png)
+![image-20240121150707083](https://markweb.idv.tw/uploads/image-20240121150707083.png)
 
 4. 編輯`harbor.yml`的設定檔，更改`crt`檔案
-![image-20240121150853037](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/gbl32eac003-image-20240121150853037.png)
+![image-20240121150853037](https://markweb.idv.tw/uploads/image-20240121150853037.png)
 
 5. 存檔後重新執行`./install.sh`
-![image-20240121151349789](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/385e56f3-image-20240121151349789.png)
+![image-20240121151349789](https://markweb.idv.tw/uploads/image-20240121151349789.png)
 
 6. 確認容器`全部啟動成功`即可
-![image-20240121151431274](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/a21ce06d-image-20240121151431274.png)
+![image-20240121151431274](https://markweb.idv.tw/uploads/image-20240121151431274.png)
 
 7. 成功畫面如下
 
-![image-20240121152947893](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/12e9178c-image-20240121152947893.png)
+![image-20240121152947893](https://markweb.idv.tw/uploads/image-20240121152947893.png)
 
-![image-20240121153020311](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Dit15f34a1b-image-20240121153020311.png)
+![image-20240121153020311](https://markweb.idv.tw/uploads/image-20240121153020311.png)
 
-![image-20240121153040298](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/olQ0c0a32bf-image-20240121153040298.png)
+![image-20240121153040298](https://markweb.idv.tw/uploads/image-20240121153040298.png)
 
 ---
 
@@ -297,13 +297,13 @@ curl -X GET -H "Authorization: Bearer bWFya2hzdTpNYXJrODUwNDA5" https://markweb.
     volumes:
       - /media/markhsu/Data3/DockerProtainer/gitlab/registry/data:/var/lib/registry
 ```
-![image-20240121153826093](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7297dba4-image-20240121153826093.png)
+![image-20240121153826093](https://markweb.idv.tw/uploads/image-20240121153826093.png)
 
 2. 開啟`/etc/gitlab/gitlab.rb`，按照`紅框處`更新以下內容
 
-![image-20240121154022411](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/jVv80707b85-image-20240121154022411.png)
+![image-20240121154022411](https://markweb.idv.tw/uploads/image-20240121154022411.png)
 
-![image-20240121154047071](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6fc07df8-image-20240121154047071.png)
+![image-20240121154047071](https://markweb.idv.tw/uploads/image-20240121154047071.png)
 
 3. 重新載入設定檔，輸入以下指令
 ```bash
@@ -312,7 +312,7 @@ gitlab-ctl reconfigure
 
 4. 進入gitlab的容器映像庫，開始使用以下指令測試
 
-![image-20240121155305652](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ksP4f5e97c7-image-20240121155305652.png)
+![image-20240121155305652](https://markweb.idv.tw/uploads/image-20240121155305652.png)
 
 5. 執行以下指令進行測試
 
@@ -325,18 +325,18 @@ docker build -t markweb.idv.tw:5300/gidlabprojectteam/20240117_gitlabsetup .
 docker push markweb.idv.tw:5300/gidlabprojectteam/20240117_gitlabsetup
 ```
 
-![image-20240121155221568](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Rz36e697d7f-image-20240121155221568.png)
+![image-20240121155221568](https://markweb.idv.tw/uploads/image-20240121155221568.png)
 
-![image-20240121155631310](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/WJG1605b877-image-20240121155631310.png)
+![image-20240121155631310](https://markweb.idv.tw/uploads/image-20240121155631310.png)
 
-![image-20240121155653791](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/wWicb6d16cd-image-20240121155653791.png)
+![image-20240121155653791](https://markweb.idv.tw/uploads/image-20240121155653791.png)
 
 
 6. 成功畫面如下
 
-![image-20240121155423169](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/hz789d3acc1-image-20240121155423169.png)
+![image-20240121155423169](https://markweb.idv.tw/uploads/image-20240121155423169.png)
 
-![image-20240121155515952](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/njId4625686-image-20240121155515952.png)
+![image-20240121155515952](https://markweb.idv.tw/uploads/image-20240121155515952.png)
 
 ---
 
@@ -349,7 +349,7 @@ docker push markweb.idv.tw:5300/gidlabprojectteam/20240117_gitlabsetup
 ProxyPass / http://markweb.idv.tw:8082/ nocanon
 ```
 
-![image-20240121161034932](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c9f849dc-image-20240121161034932.png)
+![image-20240121161034932](https://markweb.idv.tw/uploads/image-20240121161034932.png)
 
 ### 1.3.4 參考資料如下
 1. 解決Harbor無法信任根憑證之問題

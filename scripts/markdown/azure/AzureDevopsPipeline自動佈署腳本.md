@@ -122,12 +122,12 @@ ssh keygan -b 4096 -c ['你的email']
 ```batch
 C：\users\['你的使用者名稱']\.ssh
 ```
-![image-20231018202934452](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/image-20231018202934452.png)
+![image-20231018202934452](https://markweb.idv.tw/uploads/image-20231018202934452.png)
 
 
 4. 進入`AZURE DEVOPS` 的`使用者設定`，把剛剛產生的`public key 複製`到上面
 
-![image-20231018203040256](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/gCde526cb00-image-20231018203040256.png)
+![image-20231018203040256](https://markweb.idv.tw/uploads/image-20231018203040256.png)
 
 <!--more-->
 
@@ -140,9 +140,9 @@ git clone ['你的倉庫URL位址']
 ```
 2. `倉庫的URL`可以在這邊找到
 
-![image-20231019094128649](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5b9eca4b-image-20231019094128649.png)
+![image-20231019094128649](https://markweb.idv.tw/uploads/image-20231019094128649.png)
 
-![image-20231018203309314](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/b3b79905-image-20231018203309314.png)
+![image-20231018203309314](https://markweb.idv.tw/uploads/image-20231018203309314.png)
 
 <!--more-->
 
@@ -158,61 +158,61 @@ git clone ['你的倉庫URL位址']
 
 點選`AZURE存放庫`
 
-![image-20231018203929816](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/V6k87c25d83-image-20231018203929816.png)
+![image-20231018203929816](https://markweb.idv.tw/uploads/image-20231018203929816.png)
 
 選擇`mypython`
-![image-20231018203959065](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5abb4c53-image-20231018203959065.png)
+![image-20231018203959065](https://markweb.idv.tw/uploads/image-20231018203959065.png)
 
 建立 個`新的pipelines`
-![image-20231018204044225](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4293054c-image-20231018204044225.png)
+![image-20231018204044225](https://markweb.idv.tw/uploads/image-20231018204044225.png)
 
 開始撰寫`pipelines`
-![image-20231018204347774](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/g2i4dfdaf79-image-20231018204347774.png)
+![image-20231018204347774](https://markweb.idv.tw/uploads/image-20231018204347774.png)
 
 ### 1.4.3. 建立APP SERVICE
 
 點選建立`Web應用程式`
-![image-20231018204551684](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fgk4d1b208d-image-20231018204551684.png)
+![image-20231018204551684](https://markweb.idv.tw/uploads/image-20231018204551684.png)
 
 填寫`紅框處`相關資訊
-![image-20231018204743294](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/dd9d4e9d-image-20231018204743294.png)
+![image-20231018204743294](https://markweb.idv.tw/uploads/image-20231018204743294.png)
 
 選擇`定價方案`
-![image-20231018204808282](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5BM03279ce6-image-20231018204808282.png)
+![image-20231018204808282](https://markweb.idv.tw/uploads/image-20231018204808282.png)
 
 選擇`單 容器→快速入門`
-![image-20231018205007447](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2ff5eaf0-image-20231018205007447.png)
+![image-20231018205007447](https://markweb.idv.tw/uploads/image-20231018205007447.png)
 
 點選`啟用公開存取`
-![image-20231018205037346](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/da6d816c-image-20231018205037346.png)
+![image-20231018205037346](https://markweb.idv.tw/uploads/image-20231018205037346.png)
 
 點選`Application Insights`
-![image-20231018205054750](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/WXX83746ebb-image-20231018205054750.png)
+![image-20231018205054750](https://markweb.idv.tw/uploads/image-20231018205054750.png)
 
 看個人情況決定是否`建立標籤`
-![image-20231018205126436](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/05c4ec3b-image-20231018205126436.png)
+![image-20231018205126436](https://markweb.idv.tw/uploads/image-20231018205126436.png)
 
 點選建立`Web應用程式`
-![image-20231018205157355](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4fc0588a-image-20231018205157355.png)
+![image-20231018205157355](https://markweb.idv.tw/uploads/image-20231018205157355.png)
 
 
 
 ### 1.4.4. 建立AZURE Container Registry 存放庫
 
 點選`Container Registry`
-![image-20231018205242702](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/360204f7-image-20231018205242702.png)
+![image-20231018205242702](https://markweb.idv.tw/uploads/image-20231018205242702.png)
 
 輸入`紅框處`相關內容
-![image-20231018205413828](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4Bv200c1e50-image-20231018205413828.png)
+![image-20231018205413828](https://markweb.idv.tw/uploads/image-20231018205413828.png)
 
 點選`下 步`
-![image-20231018205435882](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/9de950ec-image-20231018205435882.png)
+![image-20231018205435882](https://markweb.idv.tw/uploads/image-20231018205435882.png)
 
 點選`下 步`
-![image-20231018205448309](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/tVz1a44c73a-image-20231018205448309.png)
+![image-20231018205448309](https://markweb.idv.tw/uploads/image-20231018205448309.png)
 
 看個人情況決定是否`建立標籤`
-![image-20231018205516050](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/e1a02b21-image-20231018205516050.png)
+![image-20231018205516050](https://markweb.idv.tw/uploads/image-20231018205516050.png)
 
 
 
@@ -221,50 +221,50 @@ git clone ['你的倉庫URL位址']
 AZURE Container Registry 存放庫設定
 
 存放庫建立完成後，請先進入`設定`頁面，將`管理員權限`開啟
-![image-20231018205728327](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/e2e1d3c3-image-20231018205728327.png)
+![image-20231018205728327](https://markweb.idv.tw/uploads/image-20231018205728327.png)
 
 
 存放庫可查看推送上去的`映象檔`
-![image-20231018205921457](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Nv1d3b09b24-image-20231018205921457.png)
+![image-20231018205921457](https://markweb.idv.tw/uploads/image-20231018205921457.png)
 
 ### 1.4.5. 建立MYSQL資料庫
 
 點選`建立`
-![image-20231018210311672](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/73e2830d-image-20231018210311672.png)
+![image-20231018210311672](https://markweb.idv.tw/uploads/image-20231018210311672.png)
 
 選擇`彈性伺服器`
-![image-20231018210339090](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/MfU75d45ad3-image-20231018210339090.png)
+![image-20231018210339090](https://markweb.idv.tw/uploads/image-20231018210339090.png)
 
 輸入`紅框處`相關資訊
-![image-20231018210626261](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8Bvc5c4f055-image-20231018210626261.png)
+![image-20231018210626261](https://markweb.idv.tw/uploads/image-20231018210626261.png)
 
 點選只有`mysql驗證`，並輸入下方相關資訊
-![image-20231018210736879](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8ab91026-image-20231018210736879.png)
+![image-20231018210736879](https://markweb.idv.tw/uploads/image-20231018210736879.png)
 
 這邊`公用存取`選項 定要勾
-![image-20231018210826611](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ChTecbe9a84-image-20231018210826611.png)
+![image-20231018210826611](https://markweb.idv.tw/uploads/image-20231018210826611.png)
 
 `防火牆規則`建立(可全開也可不全開)
 ![image-20231018210921019](https://markweb.idv.tw/uploads/image-20231018210921019.png)
 
 點選`下 步`
-![image-20231018211001017](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/lXg372c6856-image-20231018211001017.png)
+![image-20231018211001017](https://markweb.idv.tw/uploads/image-20231018211001017.png)
 
 看個人情況決定是否`建立標籤`
-![image-20231018211031391](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/kFS30eebc42-image-20231018211031391.png)
+![image-20231018211031391](https://markweb.idv.tw/uploads/image-20231018211031391.png)
 
 點選建立
-![image-20231018211140671](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/bEW841a3bc7-image-20231018211140671.png)
+![image-20231018211140671](https://markweb.idv.tw/uploads/image-20231018211140671.png)
 
 資料庫容器建置完成後，請`新增` 個`資料庫`
 ![image-20231018211304595](https://markweb.idv.tw/uploads/image-20231018211304595.png)
 
 這邊可以查看`連線相關帳密`
-![image-20231018211738319](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3MGc0562744-image-20231018211738319.png)
+![image-20231018211738319](https://markweb.idv.tw/uploads/image-20231018211738319.png)
 
 ### 1.4.6. 建立Pipelines環境變數
 
-![image-20231018212513993](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/a78a4e9f-image-20231018212513993.png)
+![image-20231018212513993](https://markweb.idv.tw/uploads/image-20231018212513993.png)
 
 ### 1.4.7. 開始撰寫腳本
 
@@ -793,21 +793,21 @@ DELIMITER ;
 
 ### 1.5.1. 查看執行結果
 
-![image-20231018212224544](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/e666348c-image-20231018212224544.png)
+![image-20231018212224544](https://markweb.idv.tw/uploads/image-20231018212224544.png)
 
-![image-20231018212300671](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4jq38a3c464-image-20231018212300671.png)
+![image-20231018212300671](https://markweb.idv.tw/uploads/image-20231018212300671.png)
 
-![image-20231018212335104](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/39d5353d-image-20231018212335104.png)
+![image-20231018212335104](https://markweb.idv.tw/uploads/image-20231018212335104.png)
 
 ## 1.6. 問題排除
 
 1. 請到APP SERVICE的組態設定，檢查紅框處設定是否正確
-![image-20231019094703760](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/kEH4f69b9c0-image-20231019094703760.png)
+![image-20231019094703760](https://markweb.idv.tw/uploads/image-20231019094703760.png)
 2. 部署中心的設定可以檢查這個APP SERVICE目前和誰綁定，由此圖可以得知目前和DEVOPS做綁定
-![image-20231019095015816](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c9j90d219b6-image-20231019095015816.png)
+![image-20231019095015816](https://markweb.idv.tw/uploads/image-20231019095015816.png)
 
 3. 部署中心的紀錄可以查看APP SERVICE的是否啟動，也可點選重新整理或是下載來查看紀錄
-![image-20231019095240503](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/md6f63109d5-image-20231019095240503.png)
+![image-20231019095240503](https://markweb.idv.tw/uploads/image-20231019095240503.png)
 
 
 

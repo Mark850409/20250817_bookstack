@@ -25,8 +25,8 @@ tags:
 <!--more-->
 ### 1.2.1 請點擊放大圖片，依照圖片上的流程進行設定
 
-![image-20230910141239576](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8e68eeb7-image-20230910141239576.png)
+![image-20230910141239576](https://markweb.idv.tw/uploads/image-20230910141239576.png)
 
 <!--more-->
 
-![image-20230910141614618](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Fboa2b386ac-image-20230910141614618.png)
+![image-20230910141614618](https://markweb.idv.tw/uploads/image-20230910141614618.png)

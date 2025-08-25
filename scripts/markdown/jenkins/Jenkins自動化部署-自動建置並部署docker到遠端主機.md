@@ -34,23 +34,23 @@ tags:
 
 ## 1.3 建立git專案
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/d8r0f0e21bc-upload-1a7315a2034d8ba74541f8e211948c10.png)
+![](https://markweb.idv.tw/uploads/upload_1a7315a2034d8ba74541f8e211948c10.png)
 
 <!--more-->
 
 ## 1.4 建立Jenkins作業流程
 
 ### 1.4.1 建立git倉庫後，將ssh的URL貼到Repository URL上面，並選擇 開始建立好的金鑰
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/DDNe6cac1df-upload-69cb821d2c22d51f7926d4ab486e1bba.png)
+![](https://markweb.idv.tw/uploads/upload_69cb821d2c22d51f7926d4ab486e1bba.png)
 
 ### 1.4.2 設定專案觸發＆排程
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/iiEc36dc579-upload-3089f9291c84b8d01a86c60997f2ddf5.png)
+![](https://markweb.idv.tw/uploads/upload_3089f9291c84b8d01a86c60997f2ddf5.png)
 
 ### 1.4.3 將腳本複製到遠端主機上面
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/aL5e0199afe-upload-85d9b03537f252f1c7bacd38e2e3a012.png)
+![](https://markweb.idv.tw/uploads/upload_85d9b03537f252f1c7bacd38e2e3a012.png)
 
 ### 1.4.4 建置後動作選擇寄信，附檔和建置紀錄可加可不加，最後按下儲存即可
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/RNo626c2556-upload-12f845f082263ed9b443786869523137.png)
+![](https://markweb.idv.tw/uploads/upload_12f845f082263ed9b443786869523137.png)
 
 ### 1.4.5 執行結果如附圖參考
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/u17b58a1627-upload-bf004b4709cba6198f087312bc863261.png)
+![](https://markweb.idv.tw/uploads/upload_bf004b4709cba6198f087312bc863261.png)

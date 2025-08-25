@@ -48,15 +48,15 @@ myProject
 
 如果要使用 gitlab 的 CI/CD 功能，需要申請他們的 api token。進入 gitlab 網站後，右上角頭像點選「Edit Profile」➡️「Access Tokens」申請 個 Token name。
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6c6af99d-upload-8ff1852803ee2436dd5b563839d9ed45.png)
+![](https://markweb.idv.tw/uploads/upload_8ff1852803ee2436dd5b563839d9ed45.png)
 
 Scope 可以選擇 api, read_repository, 以及 write_repository  種即可 (不過我自己是全選 😂)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/53faa50c-upload-a86ec0d3db58df301fb95f30ad41add0.png)
+![](https://markweb.idv.tw/uploads/upload_a86ec0d3db58df301fb95f30ad41add0.png)
 
 接著到要自動發佈版本的專案中，選擇「Settings」➡️「CI/CD」➡️「Variables」，將剛剛申請的 token 貼上，Key 欄位寫 GL_TOKEN：
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/nTx7955de54-upload-99bd25070d6bac52c2a464bc0fd5789a.png)
+![](https://markweb.idv.tw/uploads/upload_99bd25070d6bac52c2a464bc0fd5789a.png)
 
 <!--more-->
 ## 1.5. 操作步驟
@@ -360,9 +360,9 @@ ${Object.keys(emojisObject)
 
 4. 測試畫面如下
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/eJHcd474d30-upload-423ba6b5dfc592d07979269faa2987c8.png)
+![](https://markweb.idv.tw/uploads/upload_423ba6b5dfc592d07979269faa2987c8.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ds2213f68cc-upload-210dbcf19cdb2a78079435604413697e.png)
+![](https://markweb.idv.tw/uploads/upload_210dbcf19cdb2a78079435604413697e.png)
 
 ## 1.6. 使用方式
 
@@ -383,11 +383,11 @@ https://www.conventionalcommits.org/zh-hant/v1.0.0/
 > revert：撤銷先前的提交
 ## 1.7. 完成畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/zlQb549dd24-upload-19882f6c08a1a02cd2d3e4d6b92bc9b9.png)
+![](https://markweb.idv.tw/uploads/upload_19882f6c08a1a02cd2d3e4d6b92bc9b9.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/T5X47cc15d1-upload-3930456587bf783f62211b6e21c3caf7.png)
+![](https://markweb.idv.tw/uploads/upload_3930456587bf783f62211b6e21c3caf7.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/69ccfee5-upload-03a302243fd2aeee81ddca0eb0f98782.png)
+![](https://markweb.idv.tw/uploads/upload_03a302243fd2aeee81ddca0eb0f98782.png)
 
 
 ## 1.8. 參考網站
@@ -405,16 +405,16 @@ https://www.conventionalcommits.org/zh-hant/v1.0.0/
 
 1. 確認repo這邊設定正確
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/bf7956b7-upload-53c1a29683bdc9488e4d5871395aed95.png)
+![](https://markweb.idv.tw/uploads/upload_53c1a29683bdc9488e4d5871395aed95.png)
 
 2. 檢查是否有設置token
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/un7a440c02d-upload-7e9c11978a5241332ab5ba751a392b71.png)
+![](https://markweb.idv.tw/uploads/upload_7e9c11978a5241332ab5ba751a392b71.png)
 
 3.檢查變數是否有設定
  
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/B6lca6b9129-upload-f25921e5b84cf1249a3ec85d820207f1.png)
+![](https://markweb.idv.tw/uploads/upload_f25921e5b84cf1249a3ec85d820207f1.png)
 
 4.檢查CICD是否有傳入token
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/79bedb63-upload-275d2422d018cb9b7076ff4ad3f5a521.png)
+![](https://markweb.idv.tw/uploads/upload_275d2422d018cb9b7076ff4ad3f5a521.png)

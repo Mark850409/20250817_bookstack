@@ -102,7 +102,7 @@ print("CUDA device count:", torch.cuda.device_count())
 print("Current CUDA device:", torch.cuda.current_device())
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/GGxf3318faf-202408192055574.png)
+![](https://markweb.idv.tw/uploads/202408192055574.png)
 
 最後則是 bitsandbytes 函式庫，Windows 系統上需要安裝預編譯的函式庫。如果是 Linux 系統，則是只需要輸入 `pip install bitsandbytes>=0.39.0` 即可
 
@@ -129,7 +129,7 @@ cd C:\WorkSpace\LLaMA-Factory\LLaMA-Factory
 python .\src\webui.py
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/FeD3b2348c9-202408181847482.png)
+![](https://markweb.idv.tw/uploads/202408181847482.png)
 
 >[!NOTE] 小提示
 >如果希望webui可以吃顯卡效能，請用下列這種方式啟動
@@ -249,7 +249,7 @@ docker-compose up -d
 
 此時，回到Windows的docker desktop，可以看到`llama-factory`已正常啟動
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VEKcef79fd8-202408191949088.png)
+![](https://markweb.idv.tw/uploads/202408191949088.png)
 
 
 ## 1.4. 導入訓練資料集
@@ -383,7 +383,7 @@ if __name__ == "__main__":
 python excel_to_dataset.py . mistral_dataset.json
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/d2735e3d-202408181913296.png)
+![](https://markweb.idv.tw/uploads/202408181913296.png)
 
 輸出的格式如下
 
@@ -599,16 +599,16 @@ python excel_to_dataset.py . mistral_dataset.json
 
 請先到Hugging Face註冊一個帳號
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3423aac2-202408192100056.png)
+![](https://markweb.idv.tw/uploads/202408192100056.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/KSUaaa1f0db-202408192104771.png)
+![](https://markweb.idv.tw/uploads/202408192104771.png)
 
 >[!NOTE] 參數設定
 >* 請輸入一個`token name`
 >* `permission`我目前都全開
 >* 請注意點擊`Create token`時一定要將token保存下來，因為`畫面關掉`就`不會再出現`了，想要再取得token就要`重新生成`
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/qnM9b545f8c-202408192103625.png)
+![](https://markweb.idv.tw/uploads/202408192103625.png)
 
 將你的token貼上，接著出現尋問提示，輸入`Y`，這樣就添加成功了!!!
 
@@ -616,12 +616,12 @@ python excel_to_dataset.py . mistral_dataset.json
 
 若數據集配置正確，這邊要可以選擇
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Cbs40a61999-202408181925260.png)
+![](https://markweb.idv.tw/uploads/202408181925260.png)
 
 
 點擊預覽數據集，可以預覽目前dataset的資料
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/99101cb9-202408181926765.png)
+![](https://markweb.idv.tw/uploads/202408181926765.png)
 
 
 >[!WARNING] 訓練時出現RuntimeError: unmatched '}' in format string
@@ -629,7 +629,7 @@ python excel_to_dataset.py . mistral_dataset.json
 
 #### 1.8.1.3. 模型參數配置
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/rVddd2cef6a-202408191952796.png)
+![](https://markweb.idv.tw/uploads/202408191952796.png)
 
 * 語言：請選擇`zh`
 * 模型名稱：這邊請選擇你要拿來當`基底的模型名稱`
@@ -640,7 +640,7 @@ python excel_to_dataset.py . mistral_dataset.json
 * 計算類型：訓練時發現`bf16`會出錯，似乎是顯卡不支援這種精度，請選`fp16`或`fp32`
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/P4Be9b46fe7-202408191958425.png)
+![](https://markweb.idv.tw/uploads/202408191958425.png)
 
 預覽命令
 
@@ -651,27 +651,27 @@ python excel_to_dataset.py . mistral_dataset.json
 
 會將訓練參數保存，下次就不用重新設定
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ec868cbd-202408192002251.png)
+![](https://markweb.idv.tw/uploads/202408192002251.png)
 
 載入訓練參數
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/rmK3166e783-202408192003333.png)
+![](https://markweb.idv.tw/uploads/202408192003333.png)
 
 
 開始訓練參數
 
 點擊開始訓練會出現訓練進度條
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/p8o589cfc2f-202408192004524.png)
+![](https://markweb.idv.tw/uploads/202408192004524.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fSXc25ff48d-202408192005767.png)
+![](https://markweb.idv.tw/uploads/202408192005767.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f563800d-202408192005458.png)
+![](https://markweb.idv.tw/uploads/202408192005458.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c47942ee-202408192006839.png)
+![](https://markweb.idv.tw/uploads/202408192006839.png)
 
 #### 1.8.1.4. 使用多卡訓練
 
@@ -681,7 +681,7 @@ python excel_to_dataset.py . mistral_dataset.json
 > * 要改掉的只有`第一行`，請加上accelerate launch --config_file default_config.yaml src/train.py
 > * yaml檔請將`gpu_ids: 1,3`改成實際顯卡的ID，例如我這邊設`0,1`
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/26d27e5e-202408212112995.png)
+![](https://markweb.idv.tw/uploads/202408212112995.png)
 
 ```
 accelerate launch --config_file default_config.yaml src/train.py \
@@ -768,27 +768,27 @@ https://colab.research.google.com/drive/1de24fadzo1dPNOLwkhTzdaNySy82IKsF#scroll
 
 關鍵程式碼片段-上傳HuggingFace HUB倉庫
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/JzOe25b07d3-202408221941700.png)
+![](https://markweb.idv.tw/uploads/202408221941700.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/0rVecd5f376-202408221943326.png)
+![](https://markweb.idv.tw/uploads/202408221943326.png)
 
 ![](https://markweb.idv.tw/uploads/202408221943914.png)
 
 關鍵程式碼片段-保存到GoogleDrive
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/9e6f44fa-202408221944705.png)
+![](https://markweb.idv.tw/uploads/202408221944705.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/3b7ff518-202408221946839.png)
+![](https://markweb.idv.tw/uploads/202408221946839.png)
 
 導出結果-GoogleDrive
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c731d5fd-202408221950556.png)
+![](https://markweb.idv.tw/uploads/202408221950556.png)
 
 導出結果-HuggingFace HUB
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Kzm93024d54-202408221951797.png)
+![](https://markweb.idv.tw/uploads/202408221951797.png)
 
 
 
@@ -803,12 +803,12 @@ https://colab.research.google.com/drive/1de24fadzo1dPNOLwkhTzdaNySy82IKsF#scroll
 5. 點擊開始導出
 6. 直到顯示模型導出完成，如下圖
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/038d2f92-202408222002368.png)
+![](https://markweb.idv.tw/uploads/202408222002368.png)
 
 
 進入`models`目錄，就看到自己的模型成功被導出囉
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Uml25630ce8-202408222005004.png)
+![](https://markweb.idv.tw/uploads/202408222005004.png)
 
 #### 1.8.3.2. 安裝llama.cpp
 
@@ -829,7 +829,7 @@ make
 >* 下載之後請解壓縮到你想要放的地方，同時將環境變數指到`bin目錄`即可
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/0c1a30af-202408222356545.png)
+![](https://markweb.idv.tw/uploads/202408222356545.png)
 
 #### 1.8.3.4. 執行模型轉檔
 
@@ -839,11 +839,11 @@ python convert_hf_to_gguf.py [你的模型導出目錄]
 
 看到此畫面表示成功轉檔囉
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8CTa9e98487-202408222009481.png)
+![](https://markweb.idv.tw/uploads/202408222009481.png)
 
 這裡可以看到轉好的`gguf`檔案，這邊看似有`16GB`，原始檔未做量化檔案會很大，接下來步驟會做微調
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/42d58daf-202408222012143.png)
+![](https://markweb.idv.tw/uploads/202408222012143.png)
 
 #### 1.8.3.5. **量化模型：使用 llama.cpp 來進行量化模型**
 
@@ -857,12 +857,12 @@ llama-quantize C:\\WorkSpace\\LLaMA-Factory\\LLaMA-Factory\\models\\Llama3-8B-Ch
 
 看到此畫面表示模型量化成功
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4sD3add5164-202408230006081.png)
+![](https://markweb.idv.tw/uploads/202408230006081.png)
 
 
 接著到`models`目錄，可以發現經過量化後的模型只有`4.58GB`，很明顯比原來的`16GB`小很多
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/163b2d7e-202408230007764.png)
+![](https://markweb.idv.tw/uploads/202408230007764.png)
 
 
 #### 1.8.3.6. 執行模型`導入Ollama`
@@ -942,7 +942,7 @@ ollama create custom_Llama3-8B-Chinese-Chat-Q4 -f Modelfile
 這樣就會開始建置`Ollama模型`了，請稍等...
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ywef4068083-202408230013771.png)
+![](https://markweb.idv.tw/uploads/202408230013771.png)
 
 
 模型`建置成功`，來確認一下
@@ -955,7 +955,7 @@ ollama create custom_Llama3-8B-Chinese-Chat-Q4 -f Modelfile
 ollama list
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/dLq7419ff1c-202408230014658.png)
+![](https://markweb.idv.tw/uploads/202408230014658.png)
 
 執行模型，輸入以下指令
 
@@ -967,32 +967,32 @@ ollama run custom_Llama3-8B-q4_k_m:latest
 這個步驟就可以使用指令與模型開始對話
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/70e9e344-202408231945367.png)
+![](https://markweb.idv.tw/uploads/202408231945367.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/M0K6672ed19-202408231946315.png)
+![](https://markweb.idv.tw/uploads/202408231946315.png)
 
 
 >[!NOTE] 
 >* 這邊注意一下，因為`ollama web ui`和指令執行介面的`格式可能有所不同`，所以方才雖然在`ModelFile`將`系統提示詞`打包進去，但這邊似乎不起作用，因此請在這邊再次設定
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/1a447823-202408231948239.png)
+![](https://markweb.idv.tw/uploads/202408231948239.png)
 
 設定好請點擊`儲存並更新`
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/9fae8504-202408231950716.png)
+![](https://markweb.idv.tw/uploads/202408231950716.png)
 
 
 開始與AI對話，這邊可以注意，有設定提示詞才能吃到目前賦予AI的角色
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/sZ17e5d53f6-202408231952881.png)
+![](https://markweb.idv.tw/uploads/202408231952881.png)
 
 沒有經過訓練的模型，那就是照原先設定好的進行回覆
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/14977219-202408231954643.png)
+![](https://markweb.idv.tw/uploads/202408231954643.png)
 
 ## 1.9. 完成畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4eee46fc-202408181848004.png)
+![](https://markweb.idv.tw/uploads/202408181848004.png)
 
 ## 1.10. 參考資料
 

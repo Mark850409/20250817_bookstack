@@ -230,7 +230,7 @@ Translated English text 3: The afternoon用餐 period has passed, and many deliv
 ```
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Vbfd94f7762-202408041817430.png)
+![](https://markweb.idv.tw/uploads/202408041817430.png)
 
 
 第二代模型測試結果
@@ -340,47 +340,47 @@ https://colab.research.google.com/drive/1l8Ybtknzr_SSpeBVchUUWr83Xm7R9PCS#scroll
 
 請先設定好執行階段類型
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/XTg29b18021-202408041756132.png)
+![](https://markweb.idv.tw/uploads/202408041756132.png)
 
 指定預設編碼
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/dss71f54ddd-202408041757163.png)
+![](https://markweb.idv.tw/uploads/202408041757163.png)
 
 印出目前的編碼
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/93929347-202408041757446.png)
+![](https://markweb.idv.tw/uploads/202408041757446.png)
 
 掛載雲端硬碟
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/mCSe818fdb4-202408041758790.png)
+![](https://markweb.idv.tw/uploads/202408041758790.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/27a764aa-202408041758319.png)
+![](https://markweb.idv.tw/uploads/202408041758319.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fiWf019a5d7-202408041758366.png)
+![](https://markweb.idv.tw/uploads/202408041758366.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/05c9453a-202408041759498.png)
+![](https://markweb.idv.tw/uploads/202408041759498.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/esz1d50c04b-202408041759690.png)
+![](https://markweb.idv.tw/uploads/202408041759690.png)
 
 開始安裝套件(自己選擇要安裝第幾代)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/hfdf877be06-202408041800793.png)
+![](https://markweb.idv.tw/uploads/202408041800793.png)
 
 安裝pyngrok進行內網穿透(要先執行)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/JMvae6ed1bd-202408041802128.png)
+![](https://markweb.idv.tw/uploads/202408041802128.png)
 
 找到要執行的主程式(例如第 代Gradio)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5d523249-202408041803808.png)
+![](https://markweb.idv.tw/uploads/202408041803808.png)
 
 這步驟表示正在下載並安裝模型，有7個，請耐心等待下載完成
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VNx07a19a95-202408041804367.png)
+![](https://markweb.idv.tw/uploads/202408041804367.png)
 
 看到這個訊息表示已完成
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/w9jb10ca4f1-202408041805916.png)
+![](https://markweb.idv.tw/uploads/202408041805916.png)
 
 ---
 
@@ -388,19 +388,19 @@ https://colab.research.google.com/drive/1l8Ybtknzr_SSpeBVchUUWr83Xm7R9PCS#scroll
 
 測試回應
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/dAz0417c0fc-202408041806992.png)
+![](https://markweb.idv.tw/uploads/202408041806992.png)
 
 測試翻譯
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/xeX005b2277-202408041807951.png)
+![](https://markweb.idv.tw/uploads/202408041807951.png)
 
 ---
 
 ## 1.6. 完成畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8h6c963f496-202407282351067.png)
+![](https://markweb.idv.tw/uploads/202407282351067.png)
 
 ![](https://markweb.idv.tw/uploads/202407290019769.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/bgG61745588-202407290020253.png)
+![](https://markweb.idv.tw/uploads/202407290020253.png)
 

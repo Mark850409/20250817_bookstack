@@ -97,10 +97,10 @@ tags:
 ## 1.5. 完成畫面預覽
 
 輸入正確台股代碼，回傳對應訊息
-![image-20231230151901499](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f011cb08-image-20231230151901499.png)
+![image-20231230151901499](https://markweb.idv.tw/uploads/image-20231230151901499.png)
 
 隨意輸入錯誤代碼，回傳對應訊息
-![image-20231230151916489](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f57f31ed-image-20231230151916489.png)
+![image-20231230151916489](https://markweb.idv.tw/uploads/image-20231230151916489.png)
 
 ---
 
@@ -126,54 +126,54 @@ ngrok config add-authtoken [自己的token]
 ngrok http 7071 
 ```
 首先執行ngrok.exe
-![image-20231230140304179](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/KLFf3c7fc5e-image-20231230140304179.png)
+![image-20231230140304179](https://markweb.idv.tw/uploads/image-20231230140304179.png)
 
 
 輸入指令ngrok http 7071 
-![image-20231230140424320](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/943b74a9-image-20231230140424320.png)
+![image-20231230140424320](https://markweb.idv.tw/uploads/image-20231230140424320.png)
 
 
 等待測試環境建立完成
-![image-20231230140555359](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7fb7e7c9-image-20231230140555359.png)
+![image-20231230140555359](https://markweb.idv.tw/uploads/image-20231230140555359.png)
 
 
 網站回傳結果如下
-![image-20231230140751402](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/87f6c0dd35e-image-20231230140751402.png)
+![image-20231230140751402](https://markweb.idv.tw/uploads/image-20231230140751402.png)
 
 
 完成畫面如下
-![image-20231230140837949](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/YpH0924fb44-image-20231230140837949.png)
+![image-20231230140837949](https://markweb.idv.tw/uploads/image-20231230140837949.png)
 
 --- 
 
 ### 1.7.2. 使用postman測試回傳訊息
 
 選擇GET，輸入測試網址，點選send
-![image-20231230003205989](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/1e982c96-image-20231230003205989.png)
+![image-20231230003205989](https://markweb.idv.tw/uploads/image-20231230003205989.png)
 
 回傳正確訊息
-![image-20231230003230516](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Edo24d1fc1f-image-20231230003230516.png)
+![image-20231230003230516](https://markweb.idv.tw/uploads/image-20231230003230516.png)
 
 
 ### 1.7.3. 使用postman打API並推播訊息給LINE
 
 方法選擇post，貼上API網址，並在authorization的地方點選Bearer Token，貼上自己的token
-![image-20231230005620845](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/xEYae6ec788-image-20231230005620845.png)
+![image-20231230005620845](https://markweb.idv.tw/uploads/image-20231230005620845.png)
 
 
 在header增加json表頭
-![image-20231230005447046](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Pex9f720c29-image-20231230005447046.png)
+![image-20231230005447046](https://markweb.idv.tw/uploads/image-20231230005447046.png)
 
 
 BODY增加要傳送的訊息
-![image-20231230005523375](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ywIef37998e-image-20231230005523375.png)
+![image-20231230005523375](https://markweb.idv.tw/uploads/image-20231230005523375.png)
 
 
-![image-20231230005655597](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/d1757c09-image-20231230005655597.png)
+![image-20231230005655597](https://markweb.idv.tw/uploads/image-20231230005655597.png)
 
 
 成功畫面如附圖
-![image-20231230005739028](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/zZO619661a2-image-20231230005739028.png)
+![image-20231230005739028](https://markweb.idv.tw/uploads/image-20231230005739028.png)
 
 
 ### 1.7.4. 本機測試才需要執行此步驟(產生LINE簽章)
@@ -206,41 +206,41 @@ print(signature)
 https://developers.line.biz/zh-hant/
 
 在provider選項點擊Create，輸入名稱後按下確定
-![image-20231224212703551](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Aa801df9ebd-image-20231224212703551.png)
+![image-20231224212703551](https://markweb.idv.tw/uploads/image-20231224212703551.png)
 
 點選Create a Messaging API Channel
-![image-20231224212726942](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/t6S60f2a6b0-image-20231224212726942.png)
+![image-20231224212726942](https://markweb.idv.tw/uploads/image-20231224212726942.png)
 
 這邊選擇Taiwan
-![image-20231224212804756](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7AA77bb3665-image-20231224212804756.png)
+![image-20231224212804756](https://markweb.idv.tw/uploads/image-20231224212804756.png)
 
 
 輸入頻道名稱、敘述&選擇分類、子分類
-![image-20231224212957679](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ae3bb13e-image-20231224212957679.png)
+![image-20231224212957679](https://markweb.idv.tw/uploads/image-20231224212957679.png)
 
 
 
 畫面移至最底下，最後兩個選項打勾，點選Create
-![image-20231224212926974](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/kMmffc62210-image-20231224212926974.png)
+![image-20231224212926974](https://markweb.idv.tw/uploads/image-20231224212926974.png)
 
 
 點選OK
-![image-20231224213019775](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f6d4e704-image-20231224213019775.png)
+![image-20231224213019775](https://markweb.idv.tw/uploads/image-20231224213019775.png)
 
 點選Agree
-![image-20231224213039145](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2d7eef09e18-image-20231224213039145.png)
+![image-20231224213039145](https://markweb.idv.tw/uploads/image-20231224213039145.png)
 
 請事先建立好AZURE FUNCTION，並複製URL
-![image-20231224213216240](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/465b4527-image-20231224213216240.png)
+![image-20231224213216240](https://markweb.idv.tw/uploads/image-20231224213216240.png)
 
 進入到Messaging API的Webhooksettings，將網址貼上，最後點選update
-![image-20231224213317780](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2yNd331cf27-image-20231224213317780.png)
+![image-20231224213317780](https://markweb.idv.tw/uploads/image-20231224213317780.png)
 
 記得選擇Use webhook
-![image-20231224213350767](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/image-20231224213350767.png)
+![image-20231224213350767](https://markweb.idv.tw/uploads/image-20231224213350767.png)
 
 點選Verify，此步驟用於驗證AZURE FUNCTION和LINE BOT是否串接成功，如出現錯誤請先排查問題
-![image-20231224213407468](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f1N1dea744f-image-20231224213407468.png)
+![image-20231224213407468](https://markweb.idv.tw/uploads/image-20231224213407468.png)
 
 ---
 
@@ -454,7 +454,7 @@ twstock
 ### 1.7.8. 開始部署到AZURE FUNCTION
 
 點選Deploy to Function APP，直到部署完成
-![image-20231224220227376](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ppc2ec49d88-image-20231224220227376.png)
+![image-20231224220227376](https://markweb.idv.tw/uploads/image-20231224220227376.png)
 
 --- 
 

@@ -61,40 +61,40 @@ tags:
 
 ### 1.4.1. 登入`gitlab`，點擊`Fork`
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4CS4e5832b0-upload-8b11d8993b821ec6152435f742be6a1d.png)
+![](https://markweb.idv.tw/uploads/upload_8b11d8993b821ec6152435f742be6a1d.png)
 
 ### 1.4.2. 專案URL下拉要選擇`預設命名空間`
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8d114832-upload-724342e9ea4c1723c3ce17b90c72ac79.png)
+![](https://markweb.idv.tw/uploads/upload_724342e9ea4c1723c3ce17b90c72ac79.png)
 
 ### 1.4.3. 點擊`分叉專案`
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/pBG1e1233ff-upload-0f2505be53399349ec3068bfa98e565e.png)
+![](https://markweb.idv.tw/uploads/upload_0f2505be53399349ec3068bfa98e565e.png)
 
 ### 1.4.4. 請先下git指令將程式碼`推送到專案`，這 塊可參考`程式碼片段`
 
 
 ### 1.4.5. 點選`原始碼→合併請求`
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ceb3f40c-upload-158481ded5c18e7ad08b299d20bc01ee.png)
+![](https://markweb.idv.tw/uploads/upload_158481ded5c18e7ad08b299d20bc01ee.png)
 
 ### 1.4.6. 點選新建合併請求
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8be329ad-upload-39aad826cbcba0c4ec80eca939256131.png)
+![](https://markweb.idv.tw/uploads/upload_39aad826cbcba0c4ec80eca939256131.png)
 
 ### 1.4.7. 選擇預設來源分支`master`
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/511e4682-upload-23523d5fef15bcaa18fe96ad059afbb1.png)
+![](https://markweb.idv.tw/uploads/upload_23523d5fef15bcaa18fe96ad059afbb1.png)
 
 ### 1.4.8. 這裡的`描述細節`盡可能`越詳細越好`
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/rk813fdfdfd-upload-4bfc54bb1ae0bc8234b8cd0882902db3.png)
+![](https://markweb.idv.tw/uploads/upload_4bfc54bb1ae0bc8234b8cd0882902db3.png)
 
 ### 1.4.9. 被指派者選擇`admin`
 ![](https://markweb.idv.tw/uploads/upload_f673f04d652463772c76e3385e0f5c8b.png)
 
 ### 1.4.10. 點選`建立合併請求`
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ca79e6c5-upload-3f81aa6586e6a2b52aad474dd4915582.png)
+![](https://markweb.idv.tw/uploads/upload_3f81aa6586e6a2b52aad474dd4915582.png)
 
 
 ## 1.5. 程式碼片段參考
 進入專案 > 點選原始碼 > 程式碼片段
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/S8b6a81c122-upload-71362957f8e0353abe822a7f62d5f8b4.png)
+![](https://markweb.idv.tw/uploads/upload_71362957f8e0353abe822a7f62d5f8b4.png)
 
 <!--more-->
 
@@ -269,4 +269,4 @@ if __name__ == '__main__':
 
 ### 1.6.2.  完成畫面如下
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/KP9f42999da-upload-14b04c79a15fcbfc025b864e9eca8341.png)
+![](https://markweb.idv.tw/uploads/upload_14b04c79a15fcbfc025b864e9eca8341.png)

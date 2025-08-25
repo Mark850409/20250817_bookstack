@@ -60,7 +60,7 @@ pip3 install pyinstaller
  
 ## 1.4. 建立git倉庫
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/gN9c637bcf1-upload-546404075566efa17aa2bfaedcc490ab.png)
+![](https://markweb.idv.tw/uploads/upload_546404075566efa17aa2bfaedcc490ab.png)
 
 
 
@@ -68,10 +68,10 @@ pip3 install pyinstaller
 
 ### 1.5.1. 設定git倉庫網址&登入金鑰
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/lb385733c5b-upload-3f7c0577bdaf9aa4c1996827bbe08dc1.png)
+![](https://markweb.idv.tw/uploads/upload_3f7c0577bdaf9aa4c1996827bbe08dc1.png)
 
 ### 1.5.2. 建置觸發程序，設定為每分鐘
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/719e9f93-upload-971f10629d8d32a64ba72e672721024a.png)
+![](https://markweb.idv.tw/uploads/upload_971f10629d8d32a64ba72e672721024a.png)
 
 ### 1.5.3. 選擇SonarqubeScanner，並設定以下參數在properties
 
@@ -84,11 +84,11 @@ pip3 install pyinstaller
 * sonar.sources=/var/jenkins_home/workspace/自動化佈署+原始碼版控+原始碼弱掃+單元測試+產出測試報告+寄送email
 * sonar.sourceEncoding=UTF-8
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Gkyf389bacb-upload-77c33e4d1c00743ca3998088b94f67c6.png)
+![](https://markweb.idv.tw/uploads/upload_77c33e4d1c00743ca3998088b94f67c6.png)
 
 ### 1.5.4. 撰寫腳本並給予權限執行腳本
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/T7le591e07b-upload-21bf0be7b1c0ef6523cd5ce58d128cc0.png)
+![](https://markweb.idv.tw/uploads/upload_21bf0be7b1c0ef6523cd5ce58d128cc0.png)
 
 ```bash
 
@@ -117,11 +117,11 @@ zip -r ${WORKSPACE}/${date}_allure-results.bak ${WORKSPACE}/allure-results/*
 
 ### 1.5.5. 建置後動作選擇Allure Report，產生測試報告
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/U9B96cde4a9-upload-af16fcc85f1d8cb824fd56e8d494a6e3.png)
+![](https://markweb.idv.tw/uploads/upload_af16fcc85f1d8cb824fd56e8d494a6e3.png)
 
 ### 1.5.6. 建置後動作選擇寄信，附件和建置紀錄可加可不加
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/AcVc0e85739-upload-ec12afdf09415a9ff418239884159930.png)
+![](https://markweb.idv.tw/uploads/upload_ec12afdf09415a9ff418239884159930.png)
 
 ### 1.5.7. 執行結果如附圖
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2Dadedf48ba-upload-99295c82b9c293ccba11b8d32d597287.png)
+![](https://markweb.idv.tw/uploads/upload_99295c82b9c293ccba11b8d32d597287.png)

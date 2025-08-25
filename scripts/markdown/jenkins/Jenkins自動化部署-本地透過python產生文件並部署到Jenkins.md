@@ -242,11 +242,11 @@ python -c "import webbrowser; webbrowser.open('http://localhost:5000')"
 
 ## 1.3.3 執行結果
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VM9c267ad1c-upload-84df020c40446e9f97004f23aa692976.png)
+![](https://markweb.idv.tw/uploads/upload_84df020c40446e9f97004f23aa692976.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/5sE28fbf424-upload-e9a40a6b06b870902decbfdce80365b4.png)
+![](https://markweb.idv.tw/uploads/upload_e9a40a6b06b870902decbfdce80365b4.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/WhN6e218945-upload-9f3d20a228a3846b544b23e7bf300b2b.png)
+![](https://markweb.idv.tw/uploads/upload_9f3d20a228a3846b544b23e7bf300b2b.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/51decc73-upload-5e353cdbebbf9378effd8cedc5dbfef0.png)
+![](https://markweb.idv.tw/uploads/upload_5e353cdbebbf9378effd8cedc5dbfef0.png)

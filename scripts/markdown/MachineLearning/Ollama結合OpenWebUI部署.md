@@ -93,7 +93,7 @@ docker-compose up -d
 
 ### 1.3.3. 請確認容器都是running的狀態
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/z2f69a8efb0-202408142222136.png)
+![](https://markweb.idv.tw/uploads/202408142222136.png)
 
 
 
@@ -104,7 +104,7 @@ docker-compose up -d
 > 4. 安裝完成後可以執行pip install ollama，這樣就可以在本機拉取ollama模型
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/rurcbcbac11-202408142224768.png)
+![](https://markweb.idv.tw/uploads/202408142224768.png)
 
 
 ### 1.3.4. 拉取Ollama模型
@@ -113,7 +113,7 @@ docker-compose up -d
 
 例如：我想要抓取mistral:7b
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/zKdc0024367-202408142233739.png)
+![](https://markweb.idv.tw/uploads/202408142233739.png)
 
 
 執行指令
@@ -122,7 +122,7 @@ docker-compose up -d
 ollama list
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4b40d438-202408142235211.png)
+![](https://markweb.idv.tw/uploads/202408142235211.png)
 
 
 執行指令
@@ -131,16 +131,16 @@ ollama list
 ollama list
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/9b6123a35d6-202408142230593.png)
+![](https://markweb.idv.tw/uploads/202408142230593.png)
 
 ## 1.4. 完成畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2Wk60ed0b3a-202408142217664.png)
+![](https://markweb.idv.tw/uploads/202408142217664.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2ar49a8e508-202408142217682.png)
+![](https://markweb.idv.tw/uploads/202408142217682.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Kc3fbd55101-202408142218986.png)
+![](https://markweb.idv.tw/uploads/202408142218986.png)
 
 
 ## 1.5. 問題處理
@@ -150,7 +150,7 @@ ollama list
 > [!note]  gpu VRAM usage didn't recover within timeout
 >  `**OLLAMA_KEEP_ALIVE**`：大模型在記憶體中保留的時間，預設為5分鐘（5m）。例如，像 300 這樣的純數字表示 300 秒，0 表示模型在處理請求後立即卸載，任何負數表示模型無限期地保持載入狀態。可設定為24h，使模型在記憶體中保留24小時，提高存取速度
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c36ef3bb-202408142325268.png)
+![](https://markweb.idv.tw/uploads/202408142325268.png)
 ### 1.5.1. 參考資料
 
 [^1]: [[安裝Docker]]

@@ -38,7 +38,7 @@ tags:
 
 ### 1.2.1 開啟終端機畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Ks41b6b6ee1-upload-2039860c79149d217eb0f7dbdcde677c.png)
+![](https://markweb.idv.tw/uploads/upload_2039860c79149d217eb0f7dbdcde677c.png)
 
 ----
 
@@ -50,7 +50,7 @@ tags:
 sudo apt install postfix mailutils
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4Q577f025fb-upload-f263584d0de4fc51f61b380dfad2df9d.png)
+![](https://markweb.idv.tw/uploads/upload_f263584d0de4fc51f61b380dfad2df9d.png)
 
 ----
 
@@ -64,7 +64,7 @@ smtp_sasl_security_options = noanonymous
 smtp_tls_security_level = encrypt
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fee36b33-upload-c89ab54ba46fd10b669fbdec49309523.png)
+![](https://markweb.idv.tw/uploads/upload_c89ab54ba46fd10b669fbdec49309523.png)
 
 ----
 
@@ -72,13 +72,13 @@ smtp_tls_security_level = encrypt
 
 <https://myaccount.google.com/apppasswords>
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Jin6f398b6b-upload-a00f91d5415a091345f36cf9d9b8fd73.png)
+![](https://markweb.idv.tw/uploads/upload_a00f91d5415a091345f36cf9d9b8fd73.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7e3d7ab8-upload-174a2fe739deb7fd7070887f781f04ca.png)
+![](https://markweb.idv.tw/uploads/upload_174a2fe739deb7fd7070887f781f04ca.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/P272482690a-upload-5670b7df8de49727eb078174871ee469.png)
+![](https://markweb.idv.tw/uploads/upload_5670b7df8de49727eb078174871ee469.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/bZr4950b505-upload-367078340cd894ad9684ed218efdab7d.png)
+![](https://markweb.idv.tw/uploads/upload_367078340cd894ad9684ed218efdab7d.png)
 
 
 
@@ -87,7 +87,7 @@ smtp_tls_security_level = encrypt
 vim /etc/postfix/sasl_passwd
 [smtp.gmail.com]:587 userid@gmail.com:password
 ```
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/dca49876-upload-0c5404ae2e59e0fef42db4afa1e99eec.png)
+![](https://markweb.idv.tw/uploads/upload_0c5404ae2e59e0fef42db4afa1e99eec.png)
 
 ----
 
@@ -97,7 +97,7 @@ vim /etc/postfix/sasl_passwd
  sudo postmap /etc/postfix/sasl_passwd
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6258426a-upload-827ebac7434ffb889df24380c6dc347c.png)
+![](https://markweb.idv.tw/uploads/upload_827ebac7434ffb889df24380c6dc347c.png)
 
 ----
 
@@ -108,7 +108,7 @@ sudo chown root:root /etc/postfix/sasl_passwd*
 sudo chmod 600 /etc/postfix/sasl_passwd*
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/0LOa99a8ba1-upload-fba5343939ba6dd7e306dbf4e0e878c3.png)
+![](https://markweb.idv.tw/uploads/upload_fba5343939ba6dd7e306dbf4e0e878c3.png)
 
 ----
 
@@ -118,7 +118,7 @@ sudo chmod 600 /etc/postfix/sasl_passwd*
 service postfix reload
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/wk5f091f4e7-upload-e6480032f4bac972d0ff47aa9a46cffa.png)
+![](https://markweb.idv.tw/uploads/upload_e6480032f4bac972d0ff47aa9a46cffa.png)
 
 ----
 
@@ -128,13 +128,13 @@ service postfix reload
 echo "This is a test mail." | mail -s "test mail" userid@gmail.com
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/jpxbe4ee8e9-upload-4be9ca03d1d96e0352929deed629eb69.png)
+![](https://markweb.idv.tw/uploads/upload_4be9ca03d1d96e0352929deed629eb69.png)
 
 ----
 
 ### 1.2.9 enjoy
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/e7ed9579-upload-4aa86d39a280f83a2e7c28cc95ac1eb4.png)
+![](https://markweb.idv.tw/uploads/upload_4aa86d39a280f83a2e7c28cc95ac1eb4.png)
 
 ----
 
@@ -144,4 +144,4 @@ echo "This is a test mail." | mail -s "test mail" userid@gmail.com
 grep postfix /var/log/syslog
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/b21e99d0-upload-a0a92ee7ab0a6d232958e9af62c71cff.png)
+![](https://markweb.idv.tw/uploads/upload_a0a92ee7ab0a6d232958e9af62c71cff.png)

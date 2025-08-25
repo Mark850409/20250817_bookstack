@@ -37,7 +37,7 @@ tags:
 timedatectl
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/q8b2b4390fc-202408022345829.png)
+![](https://markweb.idv.tw/uploads/202408022345829.png)
 
 - 強制使用`RTC`，而非`UTC`時間
 
@@ -51,7 +51,7 @@ timedatectl set-local-rtc 1
  hwclock -r
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/zKfb53dd987-202408022347332.png)
+![](https://markweb.idv.tw/uploads/202408022347332.png)
 
 - 寫入目前時間到`BIOS`
 
@@ -59,7 +59,7 @@ timedatectl set-local-rtc 1
 hwclock -w
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/aowea6854e0-202408022348505.png)
+![](https://markweb.idv.tw/uploads/202408022348505.png)
 
 <!--more-->
 
@@ -245,7 +245,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 rsync -avrz data/* data2/
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/FDJbd87f014-202408031540782.png)
+![](https://markweb.idv.tw/uploads/202408031540782.png)
 
 - 編輯`harbor.yml`
 
@@ -255,7 +255,7 @@ vim harbor.yml
 
 - 修改data_volume的部份
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/vX2349e000b-202408031542951.png)
+![](https://markweb.idv.tw/uploads/202408031542951.png)
 
 - 執行安裝程式
 
@@ -263,7 +263,7 @@ vim harbor.yml
 ./install.sh 
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/UTv8be03384-202408031543690.png)
+![](https://markweb.idv.tw/uploads/202408031543690.png)
 
 
 > [!note] 小提示 
@@ -275,7 +275,7 @@ vim harbor.yml
 sudo blkid
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/jIW75e22ac3-202408022343819.png)
+![](https://markweb.idv.tw/uploads/202408022343819.png)
 
 - 修改 `/etc/fstab`
 
@@ -478,10 +478,10 @@ side-panel .pane-frame {
 - 將css透過sftp上傳至`/home/markhsu/jenkins/data/war/css/`
 
 - 記下css url路徑
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/DRo1c37336f-202408022333313.png)
+![](https://markweb.idv.tw/uploads/202408022333313.png)
 
 - 增加 個css url，將剛剛的路徑貼上
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/90152c76-202408022334748.png)
+![](https://markweb.idv.tw/uploads/202408022334748.png)
 
 - 想要找相關的jenkins logo，可以從這個網址
 https://www.jenkins.io/zh/artwork/
@@ -516,5 +516,5 @@ jobservice:
 ./install.sh
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/J8M46e9a53e-202408031753439.png)
+![](https://markweb.idv.tw/uploads/202408031753439.png)
 

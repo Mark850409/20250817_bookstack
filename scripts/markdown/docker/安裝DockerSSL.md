@@ -32,7 +32,7 @@ tags:
 
 ### 1.2.1 撰寫yaml
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7dcfab77-upload-aca249dcf820a03a03d61788198b73db.png)
+![](https://markweb.idv.tw/uploads/upload_aca249dcf820a03a03d61788198b73db.png)
 
 
 ```yaml
@@ -58,13 +58,13 @@ services:
 
 ### 1.2.2 點選佈署
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/puPfa8a6961-upload-6f876ab65bf9e46566e692d2691ae3fa.png)
+![](https://markweb.idv.tw/uploads/upload_6f876ab65bf9e46566e692d2691ae3fa.png)
 
 * * *
 
 ### 1.2.3 進入容器查看主機儲存卷
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/i6Ee7d5d976-upload-93956c4e7bc4dce14e04236d9a681a69.png)
+![](https://markweb.idv.tw/uploads/upload_93956c4e7bc4dce14e04236d9a681a69.png)
 
 * * *
 
@@ -87,7 +87,7 @@ services:
 </VirtualHost>
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/dsUcb95b011-upload-d7bf30a0ec1c12a5bda17e1e0ee94bdb.png)
+![](https://markweb.idv.tw/uploads/upload_d7bf30a0ec1c12a5bda17e1e0ee94bdb.png)
 
 * * *
 
@@ -107,7 +107,7 @@ Listen 80
 </IfModule>
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Aqo80275336-upload-1138f792ca692686897eccc797cb0a0e.png)
+![](https://markweb.idv.tw/uploads/upload_1138f792ca692686897eccc797cb0a0e.png)
 
 * * *
 
@@ -117,7 +117,7 @@ Listen 80
 LoadModule ssl_module /usr/lib/apache2/modules/mod_ssl.so
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/PnL3980ca08-upload-38423d7789e53ca871157fb70b779c07.png)
+![](https://markweb.idv.tw/uploads/upload_38423d7789e53ca871157fb70b779c07.png)
 
 
 > [!note] 小提示 
@@ -125,13 +125,13 @@ LoadModule ssl_module /usr/lib/apache2/modules/mod_ssl.so
 
 ### 1.2.7 確認容器內是否有金鑰檔
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7Wn9f391fc2-upload-341588ace47533026a4176b22d1792d5.png)
+![](https://markweb.idv.tw/uploads/upload_341588ace47533026a4176b22d1792d5.png)
 
 * * *
 
 ### 1.2.8 重啟container，讓設定生效
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6bd1c7d2-upload-a11f10ac38b0cfe8da0755ba3df26426.png)
+![](https://markweb.idv.tw/uploads/upload_a11f10ac38b0cfe8da0755ba3df26426.png)
 
 * * *
 
@@ -146,4 +146,4 @@ LoadModule ssl_module /usr/lib/apache2/modules/mod_ssl.so
 > [!note] 小提示 
 > 可點選鎖頭查看憑證資訊
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/0be2f62e-upload-09fdac17273a31b165d42ad26675b1a9.png)
+![](https://markweb.idv.tw/uploads/upload_09fdac17273a31b165d42ad26675b1a9.png)

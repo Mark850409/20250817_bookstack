@@ -3,10 +3,10 @@ import os
 import requests
 
 # 從環境變數讀取設定
-API_URL = os.getenv("BOOKSTACK_API_URL", "")
-TOKEN_ID = os.getenv("BOOKSTACK_TOKEN_ID", "")
-TOKEN_SECRET = os.getenv("BOOKSTACK_TOKEN_SECRET", "")
-MD_DIR = os.getenv("BOOKSTACK_MD_DIR", "")  # 放置 markdown 的根目錄
+API_URL = os.getenv("BOOKSTACK_API_URL", "https://mybookstack.zeabur.app/api")
+TOKEN_ID = os.getenv("BOOKSTACK_TOKEN_ID", "fd4vO13WKGyHC1ydfEPCNMMjirpAkpjH")
+TOKEN_SECRET = os.getenv("BOOKSTACK_TOKEN_SECRET", "I6ZxNWwYCBnRHr6QwRvhFEHanN59UT8s")
+MD_DIR = os.getenv("BOOKSTACK_MD_DIR", "E:/Project/NOTE/bookstack/scripts/markdown")  # 放置 markdown 的根目錄
 
 session = requests.Session()
 session.headers.update({

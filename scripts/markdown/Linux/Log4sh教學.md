@@ -35,7 +35,7 @@ git clone https://github.com/kward/log4sh.git
 mkdir test && cd test && cp ../log4sh/log4sh .
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/w5q595da514-upload-804ee65a5e4dc6f45484486e465ab472.png)
+![](https://markweb.idv.tw/uploads/upload_804ee65a5e4dc6f45484486e465ab472.png)
 
 <!--more-->
 
@@ -56,7 +56,7 @@ logger_info "Hello, world"
 echo 'message to log' |logger_info
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/XWg59dcbeb3-upload-5ca84025e5296583abd3056d59d8e054.png)
+![](https://markweb.idv.tw/uploads/upload_5ca84025e5296583abd3056d59d8e054.png)
 
 ### 1.3.3. 輸入以下指令
 
@@ -78,7 +78,7 @@ log4sh.appender.A1.layout=PatternLayout
 log4sh.appender.A1.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/E0W74385e91-upload-d0830137f47246901dc26f26b4f95e38.png)
+![](https://markweb.idv.tw/uploads/upload_d0830137f47246901dc26f26b4f95e38.png)
 
 ### 1.3.4. 輸入以下指令执行文件並給予最高權限
 
@@ -87,11 +87,11 @@ chmod 777 *
 ./helloworld.sh 
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/a9ee94df-upload-4f748130770b32c25edfc1371f2467f1.png)
+![](https://markweb.idv.tw/uploads/upload_4f748130770b32c25edfc1371f2467f1.png)
 
 ### 1.3.5. enjoy
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/371ba346-upload-7e6643c8c41b55352572f78f98daf313.png)
+![](https://markweb.idv.tw/uploads/upload_7e6643c8c41b55352572f78f98daf313.png)
 
 ## 1.4. 以下為參考連結
 

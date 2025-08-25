@@ -46,19 +46,19 @@ JenkinsNotifyTeams
 
 進入Teams > 建立團隊 > 選擇連接器 > 點選編輯
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/b3d9980b-upload-c602f06b992b041521af2cc94522de52.png)
+![](https://markweb.idv.tw/uploads/upload_c602f06b992b041521af2cc94522de52.png)
 
 
 若沒有Jenkins外掛要先行安裝 > 安裝後輸入自定義的名稱
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/444d4ebde02-upload-a5f794b299088a842b1472a377e48334.png)
+![](https://markweb.idv.tw/uploads/upload_a5f794b299088a842b1472a377e48334.png)
 
 <!--more-->
 #### 1.4.2. Jenkins設定
 
 進入管理Jenkins > Plugins > 安裝Office 365 Connector
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/gXw19d686ca-upload-544f2f596bbfe71240e6e4aee09490da.png)
+![](https://markweb.idv.tw/uploads/upload_544f2f596bbfe71240e6e4aee09490da.png)
 
 ## 1.5. 撰寫程式碼
 
@@ -129,4 +129,4 @@ def sendTeamsNotification(String title, String message) {
 ## 1.6. 完成畫面
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/PdW32a6b484-upload-69be34509d4cf385dc2cb938247874a2.png)
+![](https://markweb.idv.tw/uploads/upload_69be34509d4cf385dc2cb938247874a2.png)

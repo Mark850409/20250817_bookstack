@@ -87,9 +87,9 @@ tags:
 
 ## 1.3. 完成畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/LZ5854969d7-202501092118414.png)
+![](https://markweb.idv.tw/uploads/2025-01/202501092118414.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4c8b3294-202501092118454.png)
+![](https://markweb.idv.tw/uploads/2025-01/202501092118454.png)
 
 
 <!--more-->
@@ -97,16 +97,16 @@ tags:
 
 ### 1.4.1. 建立用於登入Azure的Service connetions
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/05b26346-202501092009355.png)
+![](https://markweb.idv.tw/uploads/2025-01/202501092009355.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/202501092010417.png)
+![](https://markweb.idv.tw/uploads/2025-01/202501092010417.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fnU35a360e7-202501092010684.png)
+![](https://markweb.idv.tw/uploads/2025-01/202501092010684.png)
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/bbe3676d-202501092011935.png)
+![](https://markweb.idv.tw/uploads/2025-01/202501092011935.png)
 
 ### 1.4.2. Azure應用程式註冊
 
@@ -662,7 +662,7 @@ az appservice plan create \
 ### 1.5.15. 設定環境變數
 
 點擊`Pipelines>Library`，建立群組名稱與變數名稱
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/12edf5e0-202501092115206.png)
+![](https://markweb.idv.tw/uploads/2025-01/202501092115206.png)
 
 
 在`azure-pipelines.yml`加入此行即可使用

@@ -44,23 +44,23 @@ tags:
 
 - 開啟themes下的_config.yml，更改url網址
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/2f32e2a2-upload-bfec6a30d4384961f4013dd14a56a41f.png)
+![](https://markweb.idv.tw/uploads/upload_bfec6a30d4384961f4013dd14a56a41f.png)
 
 - 建立hexo專用相簿
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/KZO872958a6-upload-51d9edeeaa079a38c7c92040f3d1f8da.png)
+![](https://markweb.idv.tw/uploads/upload_51d9edeeaa079a38c7c92040f3d1f8da.png)
 
 - 點選分享按鈕複製相片連結
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/93c84e26-upload-e19327eace8e67e4294a3b896cdb8fc3.png)
+![](https://markweb.idv.tw/uploads/upload_e19327eace8e67e4294a3b896cdb8fc3.png)
 
 - 點選複製圖片位址
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/doHd74368fd-upload-e7a084eac8cf201160458b8b76a4da65.png)
+![](https://markweb.idv.tw/uploads/upload_e7a084eac8cf201160458b8b76a4da65.png)
 
 - 找到avatar的url選項，複製並貼上url
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/pFRf02c5472-upload-18d5c392a77c4ff9fa2ea7a85f9db5dd.png)
+![](https://markweb.idv.tw/uploads/upload_18d5c392a77c4ff9fa2ea7a85f9db5dd.png)
 
 - 輸入以下指令重新佈署hexo
 
@@ -68,15 +68,15 @@ tags:
 hexo clean && hexo g && hexo d
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/KM00a9dd217-upload-ce82cdedc1fb4f7fc48f795cdb24a4c1.png)
+![](https://markweb.idv.tw/uploads/upload_ce82cdedc1fb4f7fc48f795cdb24a4c1.png)
 
 - 看到此畫面表示佈署成功
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/EZB5a13452a-upload-7aa447904921bbf8fc6ba8b6b71835a7.png)
+![](https://markweb.idv.tw/uploads/upload_7aa447904921bbf8fc6ba8b6b71835a7.png)
 
 - enjoy
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/zk1f588920e-upload-4afb28479c20048bd1f1463e387b2317.png)
+![](https://markweb.idv.tw/uploads/upload_4afb28479c20048bd1f1463e387b2317.png)
 
 * * *
 
@@ -96,7 +96,7 @@ hexo clean && hexo g && hexo d
 
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c210f235-upload-b105a823e015c573949638b8e110b391.png)
+![](https://markweb.idv.tw/uploads/upload_b105a823e015c573949638b8e110b391.png)
 
 #### 1.2.2.2. 開始撰寫腳本
 
@@ -358,11 +358,11 @@ if __name__ == "__main__":
 sh autoUploadImageToHexo.sh
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/36f769b7-upload-deb0014cc4e415e3b0178aee73e44dc0.png)
+![](https://markweb.idv.tw/uploads/upload_deb0014cc4e415e3b0178aee73e44dc0.png)
 
 #### 1.2.2.5. 看到此畫面表示佈署成功
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/KnNa15ee75f-upload-26c81e158f11ee5441afca059118f286.png)
+![](https://markweb.idv.tw/uploads/upload_26c81e158f11ee5441afca059118f286.png)
 
 * * *
 
@@ -374,11 +374,11 @@ https://github.com/settings/applications/new
 
 #### 1.2.3.2. 填寫以下相關內容後，點選update application
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/wWf90089b97-upload-f7ff04f6d6d03886c8a741df05f3b051.png)
+![](https://markweb.idv.tw/uploads/upload_f7ff04f6d6d03886c8a741df05f3b051.png)
 
 #### 1.2.3.3. 建立client secrets，由於金鑰只會產生 次，因此請先複製到記事本或剪貼簿存放
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/EU523b2dd4a-upload-e30588d6ee4633c00836414eae95e91b.png)
+![](https://markweb.idv.tw/uploads/upload_e30588d6ee4633c00836414eae95e91b.png)
 
 #### 1.2.3.4. 打開next主題目錄下的_config.xml，搜尋到gitalk，依據以下內容進行建立
 
@@ -389,31 +389,31 @@ https://github.com/settings/applications/new
 - admin\_user：可輸入和github\_id 樣
 - distraction\_free\_mode：可設定為true or false，呈現效果不同
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fJK5870043c-upload-55a25c34e0bf234f31ac67a8d0b29e45.png)
+![](https://markweb.idv.tw/uploads/upload_55a25c34e0bf234f31ac67a8d0b29e45.png)
 
 #### 1.2.3.5. 開啟下方指令介面，輸入hexo clean && hexo g && hexo d
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ecd38e94-upload-a033148856c3d7913d7c37dd783e885d.png)
+![](https://markweb.idv.tw/uploads/upload_a033148856c3d7913d7c37dd783e885d.png)
 
 #### 1.2.3.6.建立 個倉庫，請將倉庫選擇public，否則會找不到
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/e75b0595-upload-ecac650abd08820114824a6169df5d09.png)
+![](https://markweb.idv.tw/uploads/upload_ecac650abd08820114824a6169df5d09.png)
 
 #### 1.2.3.7. 以下為倉庫建立成功之畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/QxC2d79f1f6-upload-c24e5da924e836a84f7527c4bcda5645.png)
+![](https://markweb.idv.tw/uploads/upload_c24e5da924e836a84f7527c4bcda5645.png)
 
 #### 1.2.3.8. 登入hexo部落格，點選github登入，可看到以下畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ab06b840-upload-e5ba3444af0affdc332ccf11654c35e5.png)
+![](https://markweb.idv.tw/uploads/upload_e5ba3444af0affdc332ccf11654c35e5.png)
 
 #### 1.2.3.9. 測試 下留言，可以留言成功!!!
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/fc39f1fb-upload-5cd40e514eb33c7a4334f8f71f7770b3.png)
+![](https://markweb.idv.tw/uploads/upload_5cd40e514eb33c7a4334f8f71f7770b3.png)
 
 #### 1.2.3.10. 留言後的內容可以到倉庫的issue去查看
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/NaOeb109e22-upload-d41d8636e89cb867cd5f92fecc997c1b.png)
+![](https://markweb.idv.tw/uploads/upload_d41d8636e89cb867cd5f92fecc997c1b.png)
 
 ### 1.2.4. 同場佳映
 
@@ -464,7 +464,7 @@ https://unix.stackexchange.com/questions/217712/randomly-copy-certain-amount-of-
 
 #### 1.2.4.1. 請先建立目錄存放金鑰
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/pyP0979db72-upload-170fe734d6283271adc0ce3a7c35486d.png)
+![](https://markweb.idv.tw/uploads/upload_170fe734d6283271adc0ce3a7c35486d.png)
 
 ```bash
 cat id_ed25519.pub
@@ -472,7 +472,7 @@ cat id_ed25519.pub
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIILEuddyDHY5JpRtj5smouvZbhu0uBeUw2bqufWV5vLk root@markhsu-server
 ```
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/i4cc6ea2fc9-upload-0338e8c333b9ba75548d0fcf2a03a9d7.png)
+![](https://markweb.idv.tw/uploads/upload_0338e8c333b9ba75548d0fcf2a03a9d7.png)
 
 ![96091ea510658310d2bb769a13f0f22e.png](../../_resources/96091ea510658310d2bb769a13f0f22e.png)
 
@@ -495,17 +495,17 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIILEuddyDHY5JpRtj5smouvZbhu0uBeUw2bqufWV5vLk
 
 請先建立倉庫，記得設為公開，否則會無法存取圖片
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/yN07040fc4c-upload-d8663f3e225abff65e34acfd7138537a.png)
+![](https://markweb.idv.tw/uploads/upload_d8663f3e225abff65e34acfd7138537a.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/9ea60678-upload-7a6108c3c86d63fbbce154e69d4b1011.png)
+![](https://markweb.idv.tw/uploads/upload_7a6108c3c86d63fbbce154e69d4b1011.png)
 
 
 圖片連結不能取這 層，會找不到
 
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Km6270ab258-upload-8d21fe82e8736830d02a65e44133230e.png)
+![](https://markweb.idv.tw/uploads/upload_8d21fe82e8736830d02a65e44133230e.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/33c41e5f-upload-0622e1eeff41d6ca5c89b1af40db881f.png)
+![](https://markweb.idv.tw/uploads/upload_0622e1eeff41d6ca5c89b1af40db881f.png)
 
 * * *
 

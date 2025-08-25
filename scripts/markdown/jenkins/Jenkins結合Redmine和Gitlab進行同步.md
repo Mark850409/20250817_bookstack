@@ -59,7 +59,7 @@ RedmineGitlabSync
 >3.觸發器可以看需求調整，這裡是設定都打勾
 > 4.如果網站有掛SSL這裡要打勾
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/f593fe91-upload-7820c1d9c0c76c4f7fedef4db2701849.png)
+![](https://markweb.idv.tw/uploads/upload_7820c1d9c0c76c4f7fedef4db2701849.png)
 
 <!--more-->
 
@@ -83,11 +83,11 @@ RedmineGitlabSync
 >4.下方選項可勾可不勾
 >5.點選建立
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/zvhc90263a5-upload-ef43ae9e18d08c513d268e438af44927.png)
+![](https://markweb.idv.tw/uploads/upload_ef43ae9e18d08c513d268e438af44927.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/8FRc127c583-upload-5244685bbdd7665bde63742594681cba.png)
+![](https://markweb.idv.tw/uploads/upload_5244685bbdd7665bde63742594681cba.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/xBj245ca82e-upload-e211319e8ef91b8457fc48542c3bb3de.png)
+![](https://markweb.idv.tw/uploads/upload_e211319e8ef91b8457fc48542c3bb3de.png)
 
 ![](https://markweb.idv.tw/uploads/upload_e6cf138b255382786a2e0ef1cd1d5b18.png)
 
@@ -96,7 +96,7 @@ RedmineGitlabSync
 
 ![](https://markweb.idv.tw/uploads/upload_98b23e653e1a81081e51040f395a31b2.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/a10ba2b6-upload-8f07982773dbbfc0aabe36c0496ce98e.png)
+![](https://markweb.idv.tw/uploads/upload_8f07982773dbbfc0aabe36c0496ce98e.png)
 
 
 ### 1.4.3. 程式碼撰寫
@@ -209,8 +209,8 @@ pipeline {
 
 ## 1.5. 完成畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/SFfd41961b7-upload-fbf1ba2104dc58f9b61764b1a31a6c32.png)
+![](https://markweb.idv.tw/uploads/upload_fbf1ba2104dc58f9b61764b1a31a6c32.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/71dd6222-upload-649a4f2fa5fc8637a65a9c13b969e32f.png)
+![](https://markweb.idv.tw/uploads/upload_649a4f2fa5fc8637a65a9c13b969e32f.png)
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/vYJe4ffff39-upload-33f70c8d15732cda6c4b382c4a75fbba.png)
+![](https://markweb.idv.tw/uploads/upload_33f70c8d15732cda6c4b382c4a75fbba.png)

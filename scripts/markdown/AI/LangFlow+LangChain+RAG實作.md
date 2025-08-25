@@ -38,7 +38,7 @@ tags:
     - [STEP5：執行api測試介面(結合Gradio與聊天機器人對答)](#step5執行api測試介面結合gradio與聊天機器人對答)
 
 ## 3. 畫面最終呈現
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VNt3df9788d-image.png)
+![alt text](https://raw.githubusercontent.com/Mark850409/20241224_LangChainWithGradioBot/refs/heads/master/image.png)
 
 <!--more-->
 

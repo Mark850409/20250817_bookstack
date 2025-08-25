@@ -17,11 +17,14 @@ from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
 class ImageMigrator:
-    def __init__(self, markdown_dir, bookstack_url, bookstack_token, page_id=None):
+    def __init__(self, markdown_dir, bookstack_url, bookstack_token, page_id=None, local_images_dir=None):
         self.markdown_dir = Path(markdown_dir)
         self.bookstack_url = bookstack_url.rstrip('/')
         self.bookstack_token = bookstack_token
         self.page_id = page_id or 2  # 預設使用頁面 ID 2，匹配 curl 範例
+        
+        # 本地圖片目錄
+        self.local_images_dir = Path(local_images_dir) if local_images_dir else None
         
         # 支援的圖片格式
         self.image_extensions = {'.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.bmp'}
@@ -72,6 +75,9 @@ class ImageMigrator:
         
         # 快取已存在的圖片列表
         self.existing_images = None
+        
+        # 快取本地已存在的圖片列表
+        self.local_existing_images = None
         
     def test_api_connection(self):
         """測試 BookStack API 連線"""
@@ -156,6 +162,33 @@ class ImageMigrator:
             print(f"取得圖片庫列表時發生錯誤: {e}")
             self.existing_images = {}
             return self.existing_images
+    
+    def get_local_existing_images(self):
+        """檢查本地圖片目錄中已存在的圖片"""
+        if self.local_existing_images is not None:
+            return self.local_existing_images
+            
+        self.local_existing_images = {}
+        
+        if not self.local_images_dir or not self.local_images_dir.exists():
+            print("本地圖片目錄不存在，跳過本地檢查")
+            return self.local_existing_images
+        
+        try:
+            # 掃描本地圖片目錄
+            for img_file in self.local_images_dir.rglob('*'):
+                if img_file.is_file() and img_file.suffix.lower() in self.image_extensions:
+                    # 使用檔名作為鍵值
+                    filename = img_file.name
+                    self.local_existing_images[filename] = str(img_file)
+            
+            print(f"已掃描本地目錄，找到 {len(self.local_existing_images)} 個圖片檔案")
+            return self.local_existing_images
+            
+        except Exception as e:
+            print(f"掃描本地圖片目錄時發生錯誤: {e}")
+            self.local_existing_images = {}
+            return self.local_existing_images
         
     def find_external_images(self):
         """掃描所有 markdown 文件，找出外部圖片連結"""
@@ -213,11 +246,25 @@ class ImageMigrator:
             # 生成本地檔名
             local_filename = self.generate_local_filename(url)
             
+            # 首先檢查本地目錄是否已存在該圖片
+            local_existing_images = self.get_local_existing_images()
+            if local_filename in local_existing_images:
+                local_file_path = local_existing_images[local_filename]
+                print(f"圖片已存在於本地目錄，跳過下載: {local_filename} -> {local_file_path}")
+                
+                # 構建 BookStack URL（假設本地檔案對應的 BookStack URL）
+                # 基於檔案路徑構建相對於 BookStack 的 URL
+                relative_path = Path(local_file_path).relative_to(self.local_images_dir)
+                bookstack_url = f"{self.bookstack_url}/uploads/images/{relative_path.as_posix()}"
+                
+                self.uploaded_images[url] = bookstack_url
+                return bookstack_url
+            
             # 檢查圖片是否已存在於 BookStack 圖片庫
             existing_images = self.get_existing_images()
             if local_filename in existing_images:
                 existing_url = existing_images[local_filename]
-                print(f"圖片已存在，跳過上傳: {local_filename} -> {existing_url}")
+                print(f"圖片已存在於 BookStack，跳過上傳: {local_filename} -> {existing_url}")
                 self.uploaded_images[url] = existing_url
                 return existing_url
             
@@ -344,6 +391,34 @@ class ImageMigrator:
         }
         return content_types.get(ext, 'image/png')
     
+    def generate_clickable_image_link(self, original_url, bookstack_url, alt_text="image"):
+        """生成可點擊的縮放圖片連結格式"""
+        # 從 BookStack URL 取得檔名
+        filename = os.path.basename(bookstack_url)
+        
+        # 生成縮放版本的 URL（加入 scaled-1680-/ 路徑）
+        if '/uploads/images/gallery/' in bookstack_url:
+            # 取得年月路徑部分
+            parts = bookstack_url.split('/uploads/images/gallery/')
+            if len(parts) == 2:
+                base_url = parts[0]
+                path_and_filename = parts[1]
+                
+                # 分離路徑和檔名
+                path_parts = path_and_filename.split('/')
+                if len(path_parts) >= 2:
+                    month_path = path_parts[0]  # 例如: 2025-08
+                    filename = path_parts[-1]  # 例如: iBMimage.png
+                    
+                    # 生成縮放版本 URL
+                    scaled_url = f"{base_url}/uploads/images/gallery/{month_path}/scaled-1680-/{filename}"
+                    
+                    # 生成可點擊連結格式: [![alt](scaled_url)](original_url)
+                    return f"[![{alt_text}]({scaled_url})]({bookstack_url})"
+        
+        # 如果無法解析路徑，回退到簡單格式
+        return f"![{alt_text}]({bookstack_url})"
+
     def update_markdown_files(self):
         """更新所有 markdown 文件中的圖片連結"""
         updated_files = 0
@@ -357,17 +432,27 @@ class ImageMigrator:
                 original_content = content
                 file_replacements = 0
                 
-                # 替換圖片連結
-                for original_url, bookstack_url in self.uploaded_images.items():
-                    old_pattern = f"]({original_url})"
-                    new_pattern = f"]({bookstack_url})"
+                # 使用正規表達式查找和替換圖片連結
+                image_pattern = r'!\[([^\]]*)\]\(([^)]+)\)'
+                
+                def replace_image_link(match):
+                    nonlocal file_replacements
+                    alt_text = match.group(1)
+                    original_url = match.group(2)
                     
-                    if old_pattern in content:
-                        count_before = content.count(old_pattern)
-                        content = content.replace(old_pattern, new_pattern)
-                        count_after = content.count(old_pattern)
-                        replacements = count_before - count_after
-                        file_replacements += replacements
+                    # 檢查是否為需要替換的外部連結
+                    if original_url in self.uploaded_images:
+                        bookstack_url = self.uploaded_images[original_url]
+                        file_replacements += 1
+                        
+                        # 生成可點擊的縮放圖片連結
+                        return self.generate_clickable_image_link(original_url, bookstack_url, alt_text or "image")
+                    
+                    # 不需要替換的連結保持原樣
+                    return match.group(0)
+                
+                # 執行替換
+                content = re.sub(image_pattern, replace_image_link, content)
                 
                 # 如果有變更，寫回文件
                 if content != original_content:
@@ -391,6 +476,9 @@ class ImageMigrator:
         
         print("正在載入現有圖片庫...")
         self.get_existing_images()
+        
+        print("正在掃描本地圖片目錄...")
+        self.get_local_existing_images()
             
         print("開始掃描外部圖片...")
         external_images = self.find_external_images()
@@ -425,6 +513,7 @@ def main():
     # 設定參數
     markdown_dir = "E:/Project/NOTE/bookstack/scripts/markdown"
     bookstack_url = "https://mybookstack.zeabur.app"
+    local_images_dir = "E:/Project/NOTE/bookstack/bookstack_data/www/images"  # 本地圖片目錄
     
     print("🔧 BookStack 圖片遷移工具")
     print("=" * 50)
@@ -470,9 +559,10 @@ def main():
     print(f"📁 Markdown 目錄: {markdown_dir}")
     print(f"🌐 BookStack URL: {bookstack_url}")
     print(f"📄 目標頁面 ID: {page_id}")
+    print(f"🖼️ 本地圖片目錄: {local_images_dir}")
     print()
     
-    migrator = ImageMigrator(markdown_dir, bookstack_url, bookstack_token, page_id)
+    migrator = ImageMigrator(markdown_dir, bookstack_url, bookstack_token, page_id, local_images_dir)
     success_count, updated_files, total_replacements = migrator.migrate()
     
     print(f"\n=== 遷移結果 ===")

@@ -156,4 +156,4 @@ sudo systemctl enable gitea
 
 ### 1.3.14. 成功畫面
 
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Orl961dafe4-upload-2fec87493fa31620d2ccb3ce9a6c1e6a.png)
+![](https://markweb.idv.tw/uploads/upload_2fec87493fa31620d2ccb3ce9a6c1e6a.png)

@@ -1,78 +1,61 @@
 ---
-title: LangChain+LangFlow+LineBot串接並部署到AZURE
+title: AI部署到zeabur
+created: 2025-01-09 12:28:16Z
 tags:
+  - AI
+  - Zeabur
+  - 人工智慧
+  - LINEBOT
   - LangChain
   - LangFlow
-  - AI
-  - 人工智慧
-  - Azure
-  - LINEBOT
-  - LLM
-  - RAG
 ---
-# 1. LangChain+LangFlow+LineBot串接並部署到AZURE
+# 1. 簡介
+建立`LangFlow`聊天機器人，並與`zeabur`平台串接
 
-## 1.1. 簡介
+# 2. 目錄
+- [1. 簡介](#1-簡介)
+- [2. 目錄](#2-目錄)
+- [3. 使用方式](#3-使用方式)
+  - [3.1. LangFlow環境架設](#31-langflow環境架設)
+  - [3.2. LineBotAPI架設](#32-linebotapi架設)
+  - [3.3. LINE DEVELOPERS設定Webhook URL](#33-line-developers設定webhook-url)
 
-## 1.2. 目錄
-- [1. LangChain+LangFlow+LineBot串接並部署到AZURE](#1-langchainlangflowlinebot串接並部署到azure)
-  - [1.1. 簡介](#11-簡介)
-  - [1.2. 目錄](#12-目錄)
-  - [1.3. 操作步驟](#13-操作步驟)
-    - [1.3.1. STEP1：建立並修改env檔](#131-step1建立並修改env檔)
-    - [1.3.2. STEP2：撰寫`function_app.py`](#132-step2撰寫function_apppy)
-    - [1.3.3. STEP3：撰寫`requirements.txt`](#133-step3撰寫requirementstxt)
-    - [1.3.4. STEP4：請先在地端點擊F5進行測試，測試無誤後再部署到AzureFunction](#134-step4請先在地端點擊f5進行測試測試無誤後再部署到azurefunction)
-    - [1.3.5. STEP5：進入Azure Portal，點擊建立資源\>容器\>Container Registry](#135-step5進入azure-portal點擊建立資源容器container-registry)
-    - [1.3.6. STEP6：完成後，進入剛才建立的容器登錄\>設定\>存取金鑰](#136-step6完成後進入剛才建立的容器登錄設定存取金鑰)
-    - [1.3.7. STEP7：開啟cmd，輸入以下指令](#137-step7開啟cmd輸入以下指令)
-    - [1.3.8. STEP8：確認是否有出現這畫面，表示登入成功](#138-step8確認是否有出現這畫面表示登入成功)
-    - [1.3.9. STEP9：打包lanflow的DockerImage](#139-step9打包lanflow的dockerimage)
-    - [1.3.10. STEP10：這樣就代表打包好了](#1310-step10這樣就代表打包好了)
-    - [1.3.11. STEP11：執行標記並推送映像檔](#1311-step11執行標記並推送映像檔)
-    - [1.3.12. STEP12：確認是否推送成功](#1312-step12確認是否推送成功)
-    - [1.3.13. STEP13：建立Azure Storage](#1313-step13建立azure-storage)
-    - [1.3.14. STEP14：執行以下指令建立容器執行個體](#1314-step14執行以下指令建立容器執行個體)
-    - [STEP15：執行腳本掛載AZURE儲存庫到Windows地端](#step15執行腳本掛載azure儲存庫到windows地端)
+# 3. 使用方式
+
+## 3.1. LangFlow環境架設
+
+請先到這個網頁進行註冊(最好有GitHub帳號)
+
+https://zeabur.com/zh-TW
+
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091835364.png)
+
+請點擊`建立專案`
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091836881.png)
 
 
-## 1.3. 操作步驟
+> [!NOTE]
+> 免費用戶將於24小時以後，自動刪除該主機，若要正式上線，請付費
 
->[!NOTE] 小提示
->AZURE FUNCTION建立可參考這一篇
- >https://github.com/Mark850409/20231217_AzureFunctionAPI
- >AZURE FUNCTION串接LINEBOT可參考這一篇
- >https://github.com/Mark850409/20231224_AzureLINEBOTAPI
+這邊測試使用，可選擇`Free Trail`
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091837955.png)
+
+這邊可選擇要部署的方式，若有版控需求，建議選擇`Github`
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091901872.png)
+
+這邊請查看是否會有網域，如果沒有要`手動新增`
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091902570.png)
+
+
+
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091907037.png)
 
 <!--more-->
+## 3.2. LineBotAPI架設
 
-### 1.3.1. STEP1：建立並修改env檔
-
-請自行在專案下建立`.env`，按照以下範例進行調整
-
-```
-#######################################
-# API配置
-#######################################
-# API設置相關，根據自己的實際情況進行調整
-PORT=8012
-
-#######################################
-# LangFlow配置
-#######################################
-LANGFLOW_BASE_URL="<自己的LANGFLOW URL>"
-
-#######################################
-# LINEBOT配置
-#######################################
-CHANNEL_ACCESS_TOKEN="<自己的CHANNEL_ACCESS_TOKEN>"
-CHANNEL_SECRET="<自己的CHANNEL_SECRET>"
-```
-
-### 1.3.2. STEP2：撰寫`function_app.py`
+請撰寫`app.py`
 
 ```python
-import azure.functions as func
 import logging
 import json
 import requests
@@ -85,6 +68,7 @@ from linebot.models import (
 # 環境變數相關
 import os
 from dotenv import load_dotenv  # pip install python-dotenv
+from flask import Flask,request
 
 # 設置日誌模板
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -93,7 +77,7 @@ logger = logging.getLogger(__name__)
 # 載入 .env 檔案
 load_dotenv()
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+app = Flask(__name__)
 
 #取得LINEBOT的CHANNEL_SECRET&CHANNEL_ACCESS_TOKEN&USER_ID
 LANGFLOW_BASE_URL = os.getenv("LANGFLOW_BASE_URL") 
@@ -108,28 +92,40 @@ line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
 
 
-@app.route(route="http_trigger")
-def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
-    # 上線測試，請使用這段
+@app.route("/callback", methods=['POST'])
+def callback():
+    # get X-Line-Signature header value
+    signature = request.headers['X-Line-Signature']
+
+    # get request body as text
+    body = request.get_data(as_text=True)
+    app.logger.info("Request body: " + body)
+
+    # handle webhook body
     try:
-        signature = req.headers['x-line-signature']
-        logging.info("signature: " + signature)
-
-        # 取得 LINE body內容
-        body = req.get_body().decode("utf-8")
-        logging.info("Request body: " + body)
-
-        # handle webhook body
         handler.handle(body, signature)
-        return func.HttpResponse("OK", status_code=200)
     except InvalidSignatureError:
-        logging.error("Invalid signature error")
-        return func.HttpResponse("Invalid signature", status_code=400)
+        app.logger.info("Invalid signature. Please check your channel access token/channel secret.")
+        abort(400)
+
+    return 'OK'
+
+
+# LINE WEBHOOK串接進入點
+@app.route("/", methods=['POST'])
+def linebot():
+    body = request.get_data(as_text=True)  # 取得收到的訊息內容
+    signature = request.headers['X-Line-Signature']  # 加入回傳的 headers
+    try:
+        handler.handle(body, signature)  # 綁定訊息回傳的相關資訊
+        json_data = json.loads(body)  # json 格式化訊息內容
+    except InvalidSignatureError:
+        abort(400)
     except Exception as e:
-        logging.error(f"Unhandled exception: {e}")
-        return func.HttpResponse("Internal server error", status_code=500)
+        print(f"Error: {e}")  # 印出錯誤訊息
+        print(body)  # 印出收到的內容
 
-
+    return 'OK'  # 驗證 Webhook 使用，不能省略
 
 #文字訊息觸發點
 @handler.add(MessageEvent, message=TextMessage)
@@ -366,126 +362,37 @@ def call_api(input_text):
         logger.info(f"請求失敗，狀態碼為 {response.status_code}")
 
 if __name__ == "__main__":
-    logger.info("LINE Bot Azure Function 已啟動！")
+    logger.info("LINE Bot 已啟動！")
+    app.run(host='0.0.0.0', port=5000)
 ```
 
-### 1.3.3. STEP3：撰寫`requirements.txt`
-
-```
-azure-functions
+請撰寫`requirements.txt`
+```python
+Flask==2.2.2
+line-bot-sdk==3.13.0
+Werkzeug==2.2.2
 python-dotenv
 requests
-line-bot-sdk
-Flask
 ```
 
-### 1.3.4. STEP4：請先在地端點擊F5進行測試，測試無誤後再部署到AzureFunction
 
+若python執行時有相關的環境變數，請在這邊進行設定
 
-### 1.3.5. STEP5：進入Azure Portal，點擊建立資源>容器>Container Registry
-
-建立自己的容器存放庫
-
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/c2e597c7-image.png)
-
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/05h5eb91ae7-image-1.png)
-
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VODba903757-image-2.png)
-
-
-### 1.3.6. STEP6：完成後，進入剛才建立的容器登錄>設定>存取金鑰
-
-請先將紅框部分先記下來，等等會使用到
-
-![](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/image-3.png)
-
-
-### 1.3.7. STEP7：開啟cmd，輸入以下指令
-
-```docker
-docker login langflowbot.azurecr.io -u LangFlowBot
+```
+LANGFLOW_BASE_URL = <你的LangFlow的網址>
+CHANNEL_ACCESS_TOKEN = <你的Line後台申請的CHANNEL_ACCESS_TOKEN>
+CHANNEL_SECRET = <你的Line後台申請的CHANNEL_SECRET>
 ```
 
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6BK0c2ba24b-image-5.png)
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091920295.png)
 
-### 1.3.8. STEP8：確認是否有出現這畫面，表示登入成功
+點擊`部署`
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091920300.png)
 
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Em4f905fb79-image-6.png)
+## 3.3. LINE DEVELOPERS設定Webhook URL
 
+填入剛才架設好的API網址，路由必須要指向`callback`
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091924751.png)
 
-### 1.3.9. STEP9：打包lanflow的DockerImage
-
-```docker
-docker build -t langflow:1.0 . 
-```
-
-### 1.3.10. STEP10：這樣就代表打包好了
-
-
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/image-4.png)
-
-### 1.3.11. STEP11：執行標記並推送映像檔
-
-```docker
-docker tag langflow:1.0 langflowbot.azurecr.io/langflow:1.0
-
-docker push langflowbot.azurecr.io/langflow:1.0
-```
-
-### 1.3.12. STEP12：確認是否推送成功
-
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/891d5838-image-7.png)
-
-
-### 1.3.13. STEP13：建立Azure Storage
-
-按照以下資訊填入
-
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/Cl5e8d99348-image-8.png)
-
-無須更動設定，直接點選建立
-
-![alt text](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7797384d47b-image-9.png)
-
-### 1.3.14. STEP14：執行以下指令建立容器執行個體
-
- >[!NOTE] 小提示
- >請在地端先安裝AZURE CLI指令，或者進入AZURE CLOUDSHELL操作
-
- ```bash
-# 2. 列出可用訂閱
-az account list --output table
-
-# 3. 切換訂閱
-az account set --subscription <SUBSCRIPTION_ID>
-
-# 4. 檢查資源群組名稱
-az group list --output table
-
-# 5. 建立容器執行個體
-az container create \
-  --resource-group AIChatBot \
-  --name langflowchatbot \
-  --cpu 1 \
-  --memory 2 \
-  --ports 7860 \
-  --ip-address Public \
-  --dns-name-label mylangflowchatbot \
-  --image langflowbot.azurecr.io/langflow:1.0 \
-  --azure-file-volume-account-name <改成自己的儲存庫名稱> \
-  --azure-file-volume-account-key <改成自己的金鑰> \
-  --azure-file-volume-share-name <改成自己的儲存庫名稱> \
-  --azure-file-volume-mount-path <改成自己的要綁定的路徑>
-
-# 6. 進入容器，檢查目錄是否綁定成功
-az container exec --resource-group AIChatBot --name langflowchatbot --exec-command "/bin/bash"
-ls /mnt/data
- ```
-
- ### STEP15：執行腳本掛載AZURE儲存庫到Windows地端
-
-執行這隻腳本前，請先打開此檔案更改金鑰
-
-```powershell
-azure_storage.bat
-```
+點擊`verify`，出現`Success`代表串接成功
+![](https://raw.githubusercontent.com/Mark850409/20250108_langflow_test/refs/heads/master/images/202501091925814.png)

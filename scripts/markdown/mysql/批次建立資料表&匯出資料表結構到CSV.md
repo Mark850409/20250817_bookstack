@@ -39,22 +39,22 @@ tags:
 發現給同學的`bat檔`，遇到了 個小問題，很開心`點兩下執行`出現如下圖畫面...
 
 
-![image-20231026200612113](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/80ace8e9-image-20231026200612113.png)
+![image-20231026200612113](https://markweb.idv.tw/uploads/image-20231026200612113.png)
 
 這時可以打開`NOTEPAD++`，查看`文件編碼`，發現被改掉變成`UNIX換行格式`
-![image-20231026200659464](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/4nxa1d7ff3b-image-20231026200659464.png)
+![image-20231026200659464](https://markweb.idv.tw/uploads/image-20231026200659464.png)
 
 
 點選編輯→換行格式→`Windows格式`
-![image-20231026200733515](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/ba81a69d-image-20231026200733515.png)
+![image-20231026200733515](https://markweb.idv.tw/uploads/image-20231026200733515.png)
 
 
 確定`格式已變更`，看`右下角`
-![image-20231026200806432](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/pMw6bdda375-image-20231026200806432.png)
+![image-20231026200806432](https://markweb.idv.tw/uploads/image-20231026200806432.png)
 
 
 再次執行就成功囉~
-![image-20231026201503318](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6c949e34-image-20231026201503318.png)
+![image-20231026201503318](https://markweb.idv.tw/uploads/image-20231026201503318.png)
 
 <!--more-->
 ## 1.4. 使用方式
@@ -67,7 +67,7 @@ https://github.com/Mark850409/mysqlAutoCreateDB
 ![image-20231026201802967](https://markweb.idv.tw/uploads/image-20231026201802967.png)
 
 3. `解壓`後會看到如下圖檔案
-![image-20231026201715865](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/27676990-image-20231026201715865.png)
+![image-20231026201715865](https://markweb.idv.tw/uploads/image-20231026201715865.png)
 
 <!--more-->
 
@@ -77,17 +77,17 @@ https://github.com/Mark850409/mysqlAutoCreateDB
 ### 1.5.1. (1) 自動執行
 
 1. 點兩下執行`AutoImportSP.bat`
-![image-20231025201337284](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/F6We6ec71e9-image-20231025201337284.png)
+![image-20231025201337284](https://markweb.idv.tw/uploads/image-20231025201337284.png)
 
 
 2. 輸入資料庫帳號&輸入資料庫密碼
-![image-20231025213728682](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/6dab6403-image-20231025213728682.png)
+![image-20231025213728682](https://markweb.idv.tw/uploads/image-20231025213728682.png)
 
 3. 等待執行完成
 ![image-20231025210327458](https://markweb.idv.tw/uploads/image-20231025210327458.png)
 
 4. 執行結果
-![image-20231025211146465](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/30fbe7df-image-20231025211146465.png)
+![image-20231025211146465](https://markweb.idv.tw/uploads/image-20231025211146465.png)
 
 附上`AutoImportSP.bat`原始碼給大家參考
 
@@ -564,16 +564,16 @@ call procExportTableSchema(@DBName,@title);
 ### 1.5.4. (4) 步驟開始
 
 1. 將剛才下載的檔案`批次建立stock table.sql`，將語法整段複製起來，貼到`mysql Workbench`，如下圖
-![image-20231023101347673](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/eb43ff5b-image-20231023101347673.png)
+![image-20231023101347673](https://markweb.idv.tw/uploads/image-20231023101347673.png)
 
 2. 點選`執行`按鈕，看到以下執行結果為綠勾勾，表示執行無誤，此時`重新整理`左側的`資料庫清單`，可以發現`已建立stock`資料庫以及對應的`6個資料表`，如下圖
-![image-20231023101459437](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/d5ee3841-image-20231023101459437.png)
+![image-20231023101459437](https://markweb.idv.tw/uploads/image-20231023101459437.png)
 
 3. 將剛才下載的檔案`批次匯出table schema.sql`，將語法整段複製起來，貼到`mysql Workbench`，如下圖
-![image-20231023101534154](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/sCY715a88d7-image-20231023101534154.png)
+![image-20231023101534154](https://markweb.idv.tw/uploads/image-20231023101534154.png)
 
 4. 點選`執行`按鈕，看到以下執行結果為`綠勾勾`，表示執行無誤，此時會出現`資料表結構查詢結果`，以及在`指定目錄下生成CSV`
-![image-20231023101622238](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/7e3b9051-image-20231023101622238.png)
+![image-20231023101622238](https://markweb.idv.tw/uploads/image-20231023101622238.png)
 
 5. 執行完成到此目錄，C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/，查看是否成功產生CSV檔案。
-![image-20231023101709795](https://mybookstack.zeabur.app/uploads/images/gallery/2025-08/VOK079750be-image-20231023101709795.png)
+![image-20231023101709795](https://markweb.idv.tw/uploads/image-20231023101709795.png)
